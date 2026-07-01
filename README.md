@@ -100,5 +100,4 @@ and local databases are excluded.
 
 ## Status
 
-Experimental research code. It has not been independently reviewed, and no
-software license has been selected yet.
+lecence MIT.
