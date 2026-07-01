@@ -1,0 +1,6479 @@
+{
+  "model": "Xenova/multilingual-e5-small q8",
+  "concepts": 40,
+  "query_design": "target word is absent from every query",
+  "embedding_dims": 384,
+  "embedding_bytes_per_word": 1536,
+  "embedding_ms": 140.1683999999999,
+  "lexical": {
+    "synonyms": {
+      "count": 40,
+      "top1": 0.1,
+      "top3": 0.15,
+      "examples": [
+        {
+          "query": "пёс",
+          "expected": "собака",
+          "found": "собака",
+          "score": 0,
+          "correct": true
+        },
+        {
+          "query": "кот",
+          "expected": "кошка",
+          "found": "кошка",
+          "score": 0.0909,
+          "correct": true
+        },
+        {
+          "query": "машина",
+          "expected": "автомобиль",
+          "found": "магазин",
+          "score": 0.08,
+          "correct": false
+        },
+        {
+          "query": "доктор",
+          "expected": "врач",
+          "found": "дорога",
+          "score": 0.0909,
+          "correct": false
+        },
+        {
+          "query": "малыш",
+          "expected": "ребёнок",
+          "found": "смелый",
+          "score": 0.05,
+          "correct": false
+        },
+        {
+          "query": "жилище",
+          "expected": "дом",
+          "found": "автомобиль",
+          "score": 0.0286,
+          "correct": false
+        },
+        {
+          "query": "труд",
+          "expected": "работа",
+          "found": "страх",
+          "score": 0.0714,
+          "correct": false
+        },
+        {
+          "query": "печаль",
+          "expected": "грусть",
+          "found": "учитель",
+          "score": 0.0385,
+          "correct": false
+        },
+        {
+          "query": "счастье",
+          "expected": "радость",
+          "found": "грусть",
+          "score": 0.125,
+          "correct": false
+        },
+        {
+          "query": "пища",
+          "expected": "еда",
+          "found": "собака",
+          "score": 0,
+          "correct": false
+        },
+        {
+          "query": "поддержка",
+          "expected": "помощь",
+          "found": "одежда",
+          "score": 0.0645,
+          "correct": false
+        },
+        {
+          "query": "промах",
+          "expected": "ошибка",
+          "found": "дом",
+          "score": 0.0714,
+          "correct": false
+        },
+        {
+          "query": "путь",
+          "expected": "дорога",
+          "found": "грусть",
+          "score": 0.0588,
+          "correct": false
+        },
+        {
+          "query": "пламя",
+          "expected": "огонь",
+          "found": "время",
+          "score": 0.0588,
+          "correct": false
+        },
+        {
+          "query": "мороз",
+          "expected": "холод",
+          "found": "море",
+          "score": 0.25,
+          "correct": false
+        },
+        {
+          "query": "средства",
+          "expected": "деньги",
+          "found": "лекарство",
+          "score": 0.0833,
+          "correct": false
+        },
+        {
+          "query": "ПК",
+          "expected": "компьютер",
+          "found": "собака",
+          "score": 0,
+          "correct": false
+        },
+        {
+          "query": "смартфон",
+          "expected": "телефон",
+          "found": "телефон",
+          "score": 0.1,
+          "correct": true
+        },
+        {
+          "query": "педагог",
+          "expected": "учитель",
+          "found": "еда",
+          "score": 0.2,
+          "correct": false
+        },
+        {
+          "query": "издание",
+          "expected": "книга",
+          "found": "еда",
+          "score": 0.0588,
+          "correct": false
+        },
+        {
+          "query": "недуг",
+          "expected": "болезнь",
+          "found": "еда",
+          "score": 0.0909,
+          "correct": false
+        },
+        {
+          "query": "препарат",
+          "expected": "лекарство",
+          "found": "врач",
+          "score": 0.0435,
+          "correct": false
+        },
+        {
+          "query": "водоём",
+          "expected": "море",
+          "found": "вода",
+          "score": 0.2,
+          "correct": false
+        },
+        {
+          "query": "чаща",
+          "expected": "лес",
+          "found": "собака",
+          "score": 0,
+          "correct": false
+        },
+        {
+          "query": "аэроплан",
+          "expected": "самолёт",
+          "found": "дорога",
+          "score": 0.0345,
+          "correct": false
+        },
+        {
+          "query": "состав",
+          "expected": "поезд",
+          "found": "радость",
+          "score": 0.125,
+          "correct": false
+        },
+        {
+          "query": "мелодия",
+          "expected": "музыка",
+          "found": "холод",
+          "score": 0.1429,
+          "correct": false
+        },
+        {
+          "query": "сновидение",
+          "expected": "сон",
+          "found": "деньги",
+          "score": 0.0909,
+          "correct": false
+        },
+        {
+          "query": "боязнь",
+          "expected": "страх",
+          "found": "болезнь",
+          "score": 0.1739,
+          "correct": false
+        },
+        {
+          "query": "привязанность",
+          "expected": "любовь",
+          "found": "радость",
+          "score": 0.1429,
+          "correct": false
+        },
+        {
+          "query": "период",
+          "expected": "время",
+          "found": "вода",
+          "score": 0.0588,
+          "correct": false
+        },
+        {
+          "query": "жидкость",
+          "expected": "вода",
+          "found": "радость",
+          "score": 0.2222,
+          "correct": false
+        },
+        {
+          "query": "светило",
+          "expected": "солнце",
+          "found": "холод",
+          "score": 0.0435,
+          "correct": false
+        },
+        {
+          "query": "спутник",
+          "expected": "луна",
+          "found": "книга",
+          "score": 0.0435,
+          "correct": false
+        },
+        {
+          "query": "наряд",
+          "expected": "одежда",
+          "found": "луна",
+          "score": 0.0714,
+          "correct": false
+        },
+        {
+          "query": "ботинки",
+          "expected": "обувь",
+          "found": "работа",
+          "score": 0.125,
+          "correct": false
+        },
+        {
+          "query": "лавка",
+          "expected": "магазин",
+          "found": "кошка",
+          "score": 0.0588,
+          "correct": false
+        },
+        {
+          "query": "клиника",
+          "expected": "больница",
+          "found": "кошка",
+          "score": 0.0435,
+          "correct": false
+        },
+        {
+          "query": "скорый",
+          "expected": "быстрый",
+          "found": "быстрый",
+          "score": 0.125,
+          "correct": true
+        },
+        {
+          "query": "храбрый",
+          "expected": "смелый",
+          "found": "работа",
+          "score": 0.125,
+          "correct": false
+        }
+      ]
+    },
+    "definitions": {
+      "count": 40,
+      "top1": 0.025,
+      "top3": 0.1,
+      "examples": [
+        {
+          "query": "домашнее животное, которое лает",
+          "expected": "собака",
+          "found": "дорога",
+          "score": 0.0635,
+          "correct": false
+        },
+        {
+          "query": "домашнее животное, которое мяукает",
+          "expected": "кошка",
+          "found": "дорога",
+          "score": 0.0556,
+          "correct": false
+        },
+        {
+          "query": "транспорт с мотором и четырьмя колёсами",
+          "expected": "автомобиль",
+          "found": "самолёт",
+          "score": 0.0886,
+          "correct": false
+        },
+        {
+          "query": "человек, который лечит больных",
+          "expected": "врач",
+          "found": "больница",
+          "score": 0.1429,
+          "correct": false
+        },
+        {
+          "query": "маленький человек",
+          "expected": "ребёнок",
+          "found": "деньги",
+          "score": 0.0667,
+          "correct": false
+        },
+        {
+          "query": "место, где живут люди",
+          "expected": "дом",
+          "found": "лес",
+          "score": 0.0345,
+          "correct": false
+        },
+        {
+          "query": "занятие, за которое получают зарплату",
+          "expected": "работа",
+          "found": "дорога",
+          "score": 0.0405,
+          "correct": false
+        },
+        {
+          "query": "тяжёлое чувство без радости",
+          "expected": "грусть",
+          "found": "радость",
+          "score": 0.24,
+          "correct": false
+        },
+        {
+          "query": "приятное чувство от хорошего события",
+          "expected": "радость",
+          "found": "лекарство",
+          "score": 0.0741,
+          "correct": false
+        },
+        {
+          "query": "то, что люди едят",
+          "expected": "еда",
+          "found": "еда",
+          "score": 0.0588,
+          "correct": true
+        },
+        {
+          "query": "действие, облегчающее чужую задачу",
+          "expected": "помощь",
+          "found": "лекарство",
+          "score": 0.0488,
+          "correct": false
+        },
+        {
+          "query": "неправильный результат действия",
+          "expected": "ошибка",
+          "found": "автомобиль",
+          "score": 0.046,
+          "correct": false
+        },
+        {
+          "query": "полоса для движения между местами",
+          "expected": "дорога",
+          "found": "холод",
+          "score": 0.0484,
+          "correct": false
+        },
+        {
+          "query": "горячее свечение при горении",
+          "expected": "огонь",
+          "found": "море",
+          "score": 0.0638,
+          "correct": false
+        },
+        {
+          "query": "состояние с очень низкой температурой",
+          "expected": "холод",
+          "found": "радость",
+          "score": 0.0494,
+          "correct": false
+        },
+        {
+          "query": "то, чем оплачивают покупки",
+          "expected": "деньги",
+          "found": "врач",
+          "score": 0.0208,
+          "correct": false
+        },
+        {
+          "query": "электронное устройство для обработки данных",
+          "expected": "компьютер",
+          "found": "работа",
+          "score": 0.1059,
+          "correct": false
+        },
+        {
+          "query": "карманное устройство для звонков",
+          "expected": "телефон",
+          "found": "лекарство",
+          "score": 0.1233,
+          "correct": false
+        },
+        {
+          "query": "человек, который обучает учеников",
+          "expected": "учитель",
+          "found": "обувь",
+          "score": 0.0462,
+          "correct": false
+        },
+        {
+          "query": "текст на переплетённых страницах",
+          "expected": "книга",
+          "found": "страх",
+          "score": 0.1077,
+          "correct": false
+        },
+        {
+          "query": "нарушение здоровья организма",
+          "expected": "болезнь",
+          "found": "дорога",
+          "score": 0.1111,
+          "correct": false
+        },
+        {
+          "query": "вещество для лечения болезни",
+          "expected": "лекарство",
+          "found": "болезнь",
+          "score": 0.2308,
+          "correct": false
+        },
+        {
+          "query": "огромное пространство солёной воды",
+          "expected": "море",
+          "found": "страх",
+          "score": 0.0882,
+          "correct": false
+        },
+        {
+          "query": "большая территория, покрытая деревьями",
+          "expected": "лес",
+          "found": "больница",
+          "score": 0.069,
+          "correct": false
+        },
+        {
+          "query": "транспорт, который летает в небе",
+          "expected": "самолёт",
+          "found": "быстрый",
+          "score": 0.0635,
+          "correct": false
+        },
+        {
+          "query": "вагоны, движущиеся по рельсам",
+          "expected": "поезд",
+          "found": "огонь",
+          "score": 0.0517,
+          "correct": false
+        },
+        {
+          "query": "искусство организованных звуков",
+          "expected": "музыка",
+          "found": "лекарство",
+          "score": 0.0732,
+          "correct": false
+        },
+        {
+          "query": "отдых организма с закрытыми глазами",
+          "expected": "сон",
+          "found": "магазин",
+          "score": 0.0395,
+          "correct": false
+        },
+        {
+          "query": "чувство перед возможной опасностью",
+          "expected": "страх",
+          "found": "радость",
+          "score": 0.08,
+          "correct": false
+        },
+        {
+          "query": "глубокое тёплое чувство к кому-либо",
+          "expected": "любовь",
+          "found": "лекарство",
+          "score": 0.087,
+          "correct": false
+        },
+        {
+          "query": "то, что измеряют часами",
+          "expected": "время",
+          "found": "самолёт",
+          "score": 0.0667,
+          "correct": false
+        },
+        {
+          "query": "прозрачное питьё без цвета",
+          "expected": "вода",
+          "found": "врач",
+          "score": 0.0625,
+          "correct": false
+        },
+        {
+          "query": "звезда, освещающая Землю днём",
+          "expected": "солнце",
+          "found": "поезд",
+          "score": 0.0545,
+          "correct": false
+        },
+        {
+          "query": "небесное тело, обращающееся вокруг Земли",
+          "expected": "луна",
+          "found": "ребёнок",
+          "score": 0.0349,
+          "correct": false
+        },
+        {
+          "query": "вещи, которые надевают на тело",
+          "expected": "одежда",
+          "found": "телефон",
+          "score": 0.0526,
+          "correct": false
+        },
+        {
+          "query": "то, что надевают на ноги",
+          "expected": "обувь",
+          "found": "деньги",
+          "score": 0.0541,
+          "correct": false
+        },
+        {
+          "query": "место, где продают товары",
+          "expected": "магазин",
+          "found": "вода",
+          "score": 0.0732,
+          "correct": false
+        },
+        {
+          "query": "место, где лечат пациентов",
+          "expected": "больница",
+          "found": "лес",
+          "score": 0.0476,
+          "correct": false
+        },
+        {
+          "query": "движущийся с высокой скоростью",
+          "expected": "быстрый",
+          "found": "радость",
+          "score": 0.0882,
+          "correct": false
+        },
+        {
+          "query": "не боящийся опасности",
+          "expected": "смелый",
+          "found": "радость",
+          "score": 0.0577,
+          "correct": false
+        }
+      ]
+    },
+    "synonyms_summary": {
+      "count": 40,
+      "top1": 0.1,
+      "top3": 0.15
+    },
+    "definitions_summary": {
+      "count": 40,
+      "top1": 0.025,
+      "top3": 0.1
+    }
+  },
+  "embedding": {
+    "synonyms": {
+      "count": 40,
+      "top1": 0.75,
+      "top3": 0.875,
+      "examples": [
+        {
+          "query": "пёс",
+          "expected": "собака",
+          "found": "собака",
+          "score": 0.8177,
+          "correct": true
+        },
+        {
+          "query": "кот",
+          "expected": "кошка",
+          "found": "кошка",
+          "score": 0.8769,
+          "correct": true
+        },
+        {
+          "query": "машина",
+          "expected": "автомобиль",
+          "found": "автомобиль",
+          "score": 0.8804,
+          "correct": true
+        },
+        {
+          "query": "доктор",
+          "expected": "врач",
+          "found": "врач",
+          "score": 0.8843,
+          "correct": true
+        },
+        {
+          "query": "малыш",
+          "expected": "ребёнок",
+          "found": "ребёнок",
+          "score": 0.841,
+          "correct": true
+        },
+        {
+          "query": "жилище",
+          "expected": "дом",
+          "found": "дом",
+          "score": 0.8718,
+          "correct": true
+        },
+        {
+          "query": "труд",
+          "expected": "работа",
+          "found": "работа",
+          "score": 0.8807,
+          "correct": true
+        },
+        {
+          "query": "печаль",
+          "expected": "грусть",
+          "found": "грусть",
+          "score": 0.8707,
+          "correct": true
+        },
+        {
+          "query": "счастье",
+          "expected": "радость",
+          "found": "радость",
+          "score": 0.861,
+          "correct": true
+        },
+        {
+          "query": "пища",
+          "expected": "еда",
+          "found": "еда",
+          "score": 0.8622,
+          "correct": true
+        },
+        {
+          "query": "поддержка",
+          "expected": "помощь",
+          "found": "помощь",
+          "score": 0.8725,
+          "correct": true
+        },
+        {
+          "query": "промах",
+          "expected": "ошибка",
+          "found": "море",
+          "score": 0.8231,
+          "correct": false
+        },
+        {
+          "query": "путь",
+          "expected": "дорога",
+          "found": "дорога",
+          "score": 0.8657,
+          "correct": true
+        },
+        {
+          "query": "пламя",
+          "expected": "огонь",
+          "found": "страх",
+          "score": 0.8312,
+          "correct": false
+        },
+        {
+          "query": "мороз",
+          "expected": "холод",
+          "found": "холод",
+          "score": 0.862,
+          "correct": true
+        },
+        {
+          "query": "средства",
+          "expected": "деньги",
+          "found": "деньги",
+          "score": 0.8655,
+          "correct": true
+        },
+        {
+          "query": "ПК",
+          "expected": "компьютер",
+          "found": "компьютер",
+          "score": 0.8727,
+          "correct": true
+        },
+        {
+          "query": "смартфон",
+          "expected": "телефон",
+          "found": "телефон",
+          "score": 0.8883,
+          "correct": true
+        },
+        {
+          "query": "педагог",
+          "expected": "учитель",
+          "found": "учитель",
+          "score": 0.8629,
+          "correct": true
+        },
+        {
+          "query": "издание",
+          "expected": "книга",
+          "found": "еда",
+          "score": 0.853,
+          "correct": false
+        },
+        {
+          "query": "недуг",
+          "expected": "болезнь",
+          "found": "болезнь",
+          "score": 0.838,
+          "correct": true
+        },
+        {
+          "query": "препарат",
+          "expected": "лекарство",
+          "found": "лекарство",
+          "score": 0.8961,
+          "correct": true
+        },
+        {
+          "query": "водоём",
+          "expected": "море",
+          "found": "вода",
+          "score": 0.8851,
+          "correct": false
+        },
+        {
+          "query": "чаща",
+          "expected": "лес",
+          "found": "вода",
+          "score": 0.8162,
+          "correct": false
+        },
+        {
+          "query": "аэроплан",
+          "expected": "самолёт",
+          "found": "самолёт",
+          "score": 0.8397,
+          "correct": true
+        },
+        {
+          "query": "состав",
+          "expected": "поезд",
+          "found": "еда",
+          "score": 0.8477,
+          "correct": false
+        },
+        {
+          "query": "мелодия",
+          "expected": "музыка",
+          "found": "музыка",
+          "score": 0.8629,
+          "correct": true
+        },
+        {
+          "query": "сновидение",
+          "expected": "сон",
+          "found": "сон",
+          "score": 0.86,
+          "correct": true
+        },
+        {
+          "query": "боязнь",
+          "expected": "страх",
+          "found": "страх",
+          "score": 0.8571,
+          "correct": true
+        },
+        {
+          "query": "привязанность",
+          "expected": "любовь",
+          "found": "помощь",
+          "score": 0.8365,
+          "correct": false
+        },
+        {
+          "query": "период",
+          "expected": "время",
+          "found": "время",
+          "score": 0.861,
+          "correct": true
+        },
+        {
+          "query": "жидкость",
+          "expected": "вода",
+          "found": "вода",
+          "score": 0.8686,
+          "correct": true
+        },
+        {
+          "query": "светило",
+          "expected": "солнце",
+          "found": "солнце",
+          "score": 0.8291,
+          "correct": true
+        },
+        {
+          "query": "спутник",
+          "expected": "луна",
+          "found": "солнце",
+          "score": 0.8236,
+          "correct": false
+        },
+        {
+          "query": "наряд",
+          "expected": "одежда",
+          "found": "одежда",
+          "score": 0.8362,
+          "correct": true
+        },
+        {
+          "query": "ботинки",
+          "expected": "обувь",
+          "found": "обувь",
+          "score": 0.8639,
+          "correct": true
+        },
+        {
+          "query": "лавка",
+          "expected": "магазин",
+          "found": "еда",
+          "score": 0.8257,
+          "correct": false
+        },
+        {
+          "query": "клиника",
+          "expected": "больница",
+          "found": "больница",
+          "score": 0.8635,
+          "correct": true
+        },
+        {
+          "query": "скорый",
+          "expected": "быстрый",
+          "found": "смелый",
+          "score": 0.8454,
+          "correct": false
+        },
+        {
+          "query": "храбрый",
+          "expected": "смелый",
+          "found": "смелый",
+          "score": 0.8408,
+          "correct": true
+        }
+      ]
+    },
+    "definitions": {
+      "count": 40,
+      "top1": 0.75,
+      "top3": 0.95,
+      "examples": [
+        {
+          "query": "домашнее животное, которое лает",
+          "expected": "собака",
+          "found": "собака",
+          "score": 0.8412,
+          "correct": true
+        },
+        {
+          "query": "домашнее животное, которое мяукает",
+          "expected": "кошка",
+          "found": "собака",
+          "score": 0.8349,
+          "correct": false
+        },
+        {
+          "query": "транспорт с мотором и четырьмя колёсами",
+          "expected": "автомобиль",
+          "found": "автомобиль",
+          "score": 0.84,
+          "correct": true
+        },
+        {
+          "query": "человек, который лечит больных",
+          "expected": "врач",
+          "found": "врач",
+          "score": 0.8503,
+          "correct": true
+        },
+        {
+          "query": "маленький человек",
+          "expected": "ребёнок",
+          "found": "ребёнок",
+          "score": 0.8532,
+          "correct": true
+        },
+        {
+          "query": "место, где живут люди",
+          "expected": "дом",
+          "found": "море",
+          "score": 0.8127,
+          "correct": false
+        },
+        {
+          "query": "занятие, за которое получают зарплату",
+          "expected": "работа",
+          "found": "работа",
+          "score": 0.8402,
+          "correct": true
+        },
+        {
+          "query": "тяжёлое чувство без радости",
+          "expected": "грусть",
+          "found": "грусть",
+          "score": 0.8494,
+          "correct": true
+        },
+        {
+          "query": "приятное чувство от хорошего события",
+          "expected": "радость",
+          "found": "радость",
+          "score": 0.8497,
+          "correct": true
+        },
+        {
+          "query": "то, что люди едят",
+          "expected": "еда",
+          "found": "еда",
+          "score": 0.8734,
+          "correct": true
+        },
+        {
+          "query": "действие, облегчающее чужую задачу",
+          "expected": "помощь",
+          "found": "помощь",
+          "score": 0.8346,
+          "correct": true
+        },
+        {
+          "query": "неправильный результат действия",
+          "expected": "ошибка",
+          "found": "ошибка",
+          "score": 0.8278,
+          "correct": true
+        },
+        {
+          "query": "полоса для движения между местами",
+          "expected": "дорога",
+          "found": "дорога",
+          "score": 0.8159,
+          "correct": true
+        },
+        {
+          "query": "горячее свечение при горении",
+          "expected": "огонь",
+          "found": "холод",
+          "score": 0.832,
+          "correct": false
+        },
+        {
+          "query": "состояние с очень низкой температурой",
+          "expected": "холод",
+          "found": "холод",
+          "score": 0.8463,
+          "correct": true
+        },
+        {
+          "query": "то, чем оплачивают покупки",
+          "expected": "деньги",
+          "found": "магазин",
+          "score": 0.8328,
+          "correct": false
+        },
+        {
+          "query": "электронное устройство для обработки данных",
+          "expected": "компьютер",
+          "found": "компьютер",
+          "score": 0.8344,
+          "correct": true
+        },
+        {
+          "query": "карманное устройство для звонков",
+          "expected": "телефон",
+          "found": "телефон",
+          "score": 0.8385,
+          "correct": true
+        },
+        {
+          "query": "человек, который обучает учеников",
+          "expected": "учитель",
+          "found": "учитель",
+          "score": 0.8621,
+          "correct": true
+        },
+        {
+          "query": "текст на переплетённых страницах",
+          "expected": "книга",
+          "found": "ребёнок",
+          "score": 0.8162,
+          "correct": false
+        },
+        {
+          "query": "нарушение здоровья организма",
+          "expected": "болезнь",
+          "found": "болезнь",
+          "score": 0.8602,
+          "correct": true
+        },
+        {
+          "query": "вещество для лечения болезни",
+          "expected": "лекарство",
+          "found": "лекарство",
+          "score": 0.8614,
+          "correct": true
+        },
+        {
+          "query": "огромное пространство солёной воды",
+          "expected": "море",
+          "found": "вода",
+          "score": 0.8236,
+          "correct": false
+        },
+        {
+          "query": "большая территория, покрытая деревьями",
+          "expected": "лес",
+          "found": "лес",
+          "score": 0.8361,
+          "correct": true
+        },
+        {
+          "query": "транспорт, который летает в небе",
+          "expected": "самолёт",
+          "found": "самолёт",
+          "score": 0.8417,
+          "correct": true
+        },
+        {
+          "query": "вагоны, движущиеся по рельсам",
+          "expected": "поезд",
+          "found": "поезд",
+          "score": 0.8502,
+          "correct": true
+        },
+        {
+          "query": "искусство организованных звуков",
+          "expected": "музыка",
+          "found": "музыка",
+          "score": 0.8091,
+          "correct": true
+        },
+        {
+          "query": "отдых организма с закрытыми глазами",
+          "expected": "сон",
+          "found": "болезнь",
+          "score": 0.8158,
+          "correct": false
+        },
+        {
+          "query": "чувство перед возможной опасностью",
+          "expected": "страх",
+          "found": "страх",
+          "score": 0.8564,
+          "correct": true
+        },
+        {
+          "query": "глубокое тёплое чувство к кому-либо",
+          "expected": "любовь",
+          "found": "смелый",
+          "score": 0.8574,
+          "correct": false
+        },
+        {
+          "query": "то, что измеряют часами",
+          "expected": "время",
+          "found": "время",
+          "score": 0.8597,
+          "correct": true
+        },
+        {
+          "query": "прозрачное питьё без цвета",
+          "expected": "вода",
+          "found": "вода",
+          "score": 0.8238,
+          "correct": true
+        },
+        {
+          "query": "звезда, освещающая Землю днём",
+          "expected": "солнце",
+          "found": "луна",
+          "score": 0.8453,
+          "correct": false
+        },
+        {
+          "query": "небесное тело, обращающееся вокруг Земли",
+          "expected": "луна",
+          "found": "луна",
+          "score": 0.8432,
+          "correct": true
+        },
+        {
+          "query": "вещи, которые надевают на тело",
+          "expected": "одежда",
+          "found": "одежда",
+          "score": 0.8328,
+          "correct": true
+        },
+        {
+          "query": "то, что надевают на ноги",
+          "expected": "обувь",
+          "found": "обувь",
+          "score": 0.8358,
+          "correct": true
+        },
+        {
+          "query": "место, где продают товары",
+          "expected": "магазин",
+          "found": "магазин",
+          "score": 0.8551,
+          "correct": true
+        },
+        {
+          "query": "место, где лечат пациентов",
+          "expected": "больница",
+          "found": "больница",
+          "score": 0.8468,
+          "correct": true
+        },
+        {
+          "query": "движущийся с высокой скоростью",
+          "expected": "быстрый",
+          "found": "быстрый",
+          "score": 0.8521,
+          "correct": true
+        },
+        {
+          "query": "не боящийся опасности",
+          "expected": "смелый",
+          "found": "страх",
+          "score": 0.8506,
+          "correct": false
+        }
+      ]
+    },
+    "synonyms_summary": {
+      "count": 40,
+      "top1": 0.75,
+      "top3": 0.875
+    },
+    "definitions_summary": {
+      "count": 40,
+      "top1": 0.75,
+      "top3": 0.95
+    }
+  },
+  "vector_quantization": {
+    "int8": {
+      "bits_per_component": 8,
+      "bytes_per_word": 388,
+      "compression_vs_float_embedding": 0.7473958333333333,
+      "synonyms": {
+        "count": 40,
+        "top1": 0.75,
+        "top3": 0.85,
+        "examples": [
+          {
+            "query": "пёс",
+            "expected": "собака",
+            "found": "собака",
+            "score": 0.8178,
+            "correct": true
+          },
+          {
+            "query": "кот",
+            "expected": "кошка",
+            "found": "кошка",
+            "score": 0.8764,
+            "correct": true
+          },
+          {
+            "query": "машина",
+            "expected": "автомобиль",
+            "found": "автомобиль",
+            "score": 0.8806,
+            "correct": true
+          },
+          {
+            "query": "доктор",
+            "expected": "врач",
+            "found": "врач",
+            "score": 0.8848,
+            "correct": true
+          },
+          {
+            "query": "малыш",
+            "expected": "ребёнок",
+            "found": "ребёнок",
+            "score": 0.8407,
+            "correct": true
+          },
+          {
+            "query": "жилище",
+            "expected": "дом",
+            "found": "дом",
+            "score": 0.872,
+            "correct": true
+          },
+          {
+            "query": "труд",
+            "expected": "работа",
+            "found": "работа",
+            "score": 0.8803,
+            "correct": true
+          },
+          {
+            "query": "печаль",
+            "expected": "грусть",
+            "found": "грусть",
+            "score": 0.8704,
+            "correct": true
+          },
+          {
+            "query": "счастье",
+            "expected": "радость",
+            "found": "радость",
+            "score": 0.8614,
+            "correct": true
+          },
+          {
+            "query": "пища",
+            "expected": "еда",
+            "found": "еда",
+            "score": 0.8624,
+            "correct": true
+          },
+          {
+            "query": "поддержка",
+            "expected": "помощь",
+            "found": "помощь",
+            "score": 0.8721,
+            "correct": true
+          },
+          {
+            "query": "промах",
+            "expected": "ошибка",
+            "found": "море",
+            "score": 0.8231,
+            "correct": false
+          },
+          {
+            "query": "путь",
+            "expected": "дорога",
+            "found": "дорога",
+            "score": 0.8662,
+            "correct": true
+          },
+          {
+            "query": "пламя",
+            "expected": "огонь",
+            "found": "страх",
+            "score": 0.8317,
+            "correct": false
+          },
+          {
+            "query": "мороз",
+            "expected": "холод",
+            "found": "холод",
+            "score": 0.8618,
+            "correct": true
+          },
+          {
+            "query": "средства",
+            "expected": "деньги",
+            "found": "деньги",
+            "score": 0.8657,
+            "correct": true
+          },
+          {
+            "query": "ПК",
+            "expected": "компьютер",
+            "found": "компьютер",
+            "score": 0.8731,
+            "correct": true
+          },
+          {
+            "query": "смартфон",
+            "expected": "телефон",
+            "found": "телефон",
+            "score": 0.8886,
+            "correct": true
+          },
+          {
+            "query": "педагог",
+            "expected": "учитель",
+            "found": "учитель",
+            "score": 0.863,
+            "correct": true
+          },
+          {
+            "query": "издание",
+            "expected": "книга",
+            "found": "еда",
+            "score": 0.8533,
+            "correct": false
+          },
+          {
+            "query": "недуг",
+            "expected": "болезнь",
+            "found": "болезнь",
+            "score": 0.8383,
+            "correct": true
+          },
+          {
+            "query": "препарат",
+            "expected": "лекарство",
+            "found": "лекарство",
+            "score": 0.8964,
+            "correct": true
+          },
+          {
+            "query": "водоём",
+            "expected": "море",
+            "found": "вода",
+            "score": 0.8852,
+            "correct": false
+          },
+          {
+            "query": "чаща",
+            "expected": "лес",
+            "found": "вода",
+            "score": 0.8162,
+            "correct": false
+          },
+          {
+            "query": "аэроплан",
+            "expected": "самолёт",
+            "found": "самолёт",
+            "score": 0.8397,
+            "correct": true
+          },
+          {
+            "query": "состав",
+            "expected": "поезд",
+            "found": "еда",
+            "score": 0.8483,
+            "correct": false
+          },
+          {
+            "query": "мелодия",
+            "expected": "музыка",
+            "found": "музыка",
+            "score": 0.8627,
+            "correct": true
+          },
+          {
+            "query": "сновидение",
+            "expected": "сон",
+            "found": "сон",
+            "score": 0.8599,
+            "correct": true
+          },
+          {
+            "query": "боязнь",
+            "expected": "страх",
+            "found": "страх",
+            "score": 0.8564,
+            "correct": true
+          },
+          {
+            "query": "привязанность",
+            "expected": "любовь",
+            "found": "помощь",
+            "score": 0.8361,
+            "correct": false
+          },
+          {
+            "query": "период",
+            "expected": "время",
+            "found": "время",
+            "score": 0.8611,
+            "correct": true
+          },
+          {
+            "query": "жидкость",
+            "expected": "вода",
+            "found": "вода",
+            "score": 0.8681,
+            "correct": true
+          },
+          {
+            "query": "светило",
+            "expected": "солнце",
+            "found": "солнце",
+            "score": 0.8285,
+            "correct": true
+          },
+          {
+            "query": "спутник",
+            "expected": "луна",
+            "found": "солнце",
+            "score": 0.823,
+            "correct": false
+          },
+          {
+            "query": "наряд",
+            "expected": "одежда",
+            "found": "одежда",
+            "score": 0.8358,
+            "correct": true
+          },
+          {
+            "query": "ботинки",
+            "expected": "обувь",
+            "found": "обувь",
+            "score": 0.864,
+            "correct": true
+          },
+          {
+            "query": "лавка",
+            "expected": "магазин",
+            "found": "еда",
+            "score": 0.8254,
+            "correct": false
+          },
+          {
+            "query": "клиника",
+            "expected": "больница",
+            "found": "больница",
+            "score": 0.8634,
+            "correct": true
+          },
+          {
+            "query": "скорый",
+            "expected": "быстрый",
+            "found": "смелый",
+            "score": 0.8452,
+            "correct": false
+          },
+          {
+            "query": "храбрый",
+            "expected": "смелый",
+            "found": "смелый",
+            "score": 0.8409,
+            "correct": true
+          }
+        ]
+      },
+      "definitions": {
+        "count": 40,
+        "top1": 0.75,
+        "top3": 0.925,
+        "examples": [
+          {
+            "query": "домашнее животное, которое лает",
+            "expected": "собака",
+            "found": "собака",
+            "score": 0.8415,
+            "correct": true
+          },
+          {
+            "query": "домашнее животное, которое мяукает",
+            "expected": "кошка",
+            "found": "собака",
+            "score": 0.8349,
+            "correct": false
+          },
+          {
+            "query": "транспорт с мотором и четырьмя колёсами",
+            "expected": "автомобиль",
+            "found": "автомобиль",
+            "score": 0.8394,
+            "correct": true
+          },
+          {
+            "query": "человек, который лечит больных",
+            "expected": "врач",
+            "found": "врач",
+            "score": 0.8501,
+            "correct": true
+          },
+          {
+            "query": "маленький человек",
+            "expected": "ребёнок",
+            "found": "ребёнок",
+            "score": 0.8529,
+            "correct": true
+          },
+          {
+            "query": "место, где живут люди",
+            "expected": "дом",
+            "found": "море",
+            "score": 0.8129,
+            "correct": false
+          },
+          {
+            "query": "занятие, за которое получают зарплату",
+            "expected": "работа",
+            "found": "работа",
+            "score": 0.8397,
+            "correct": true
+          },
+          {
+            "query": "тяжёлое чувство без радости",
+            "expected": "грусть",
+            "found": "грусть",
+            "score": 0.8494,
+            "correct": true
+          },
+          {
+            "query": "приятное чувство от хорошего события",
+            "expected": "радость",
+            "found": "радость",
+            "score": 0.8495,
+            "correct": true
+          },
+          {
+            "query": "то, что люди едят",
+            "expected": "еда",
+            "found": "еда",
+            "score": 0.8738,
+            "correct": true
+          },
+          {
+            "query": "действие, облегчающее чужую задачу",
+            "expected": "помощь",
+            "found": "помощь",
+            "score": 0.8336,
+            "correct": true
+          },
+          {
+            "query": "неправильный результат действия",
+            "expected": "ошибка",
+            "found": "ошибка",
+            "score": 0.828,
+            "correct": true
+          },
+          {
+            "query": "полоса для движения между местами",
+            "expected": "дорога",
+            "found": "дорога",
+            "score": 0.8161,
+            "correct": true
+          },
+          {
+            "query": "горячее свечение при горении",
+            "expected": "огонь",
+            "found": "холод",
+            "score": 0.8319,
+            "correct": false
+          },
+          {
+            "query": "состояние с очень низкой температурой",
+            "expected": "холод",
+            "found": "холод",
+            "score": 0.8461,
+            "correct": true
+          },
+          {
+            "query": "то, чем оплачивают покупки",
+            "expected": "деньги",
+            "found": "магазин",
+            "score": 0.8325,
+            "correct": false
+          },
+          {
+            "query": "электронное устройство для обработки данных",
+            "expected": "компьютер",
+            "found": "компьютер",
+            "score": 0.8346,
+            "correct": true
+          },
+          {
+            "query": "карманное устройство для звонков",
+            "expected": "телефон",
+            "found": "телефон",
+            "score": 0.8395,
+            "correct": true
+          },
+          {
+            "query": "человек, который обучает учеников",
+            "expected": "учитель",
+            "found": "учитель",
+            "score": 0.8621,
+            "correct": true
+          },
+          {
+            "query": "текст на переплетённых страницах",
+            "expected": "книга",
+            "found": "ребёнок",
+            "score": 0.8156,
+            "correct": false
+          },
+          {
+            "query": "нарушение здоровья организма",
+            "expected": "болезнь",
+            "found": "болезнь",
+            "score": 0.8608,
+            "correct": true
+          },
+          {
+            "query": "вещество для лечения болезни",
+            "expected": "лекарство",
+            "found": "лекарство",
+            "score": 0.8616,
+            "correct": true
+          },
+          {
+            "query": "огромное пространство солёной воды",
+            "expected": "море",
+            "found": "вода",
+            "score": 0.8242,
+            "correct": false
+          },
+          {
+            "query": "большая территория, покрытая деревьями",
+            "expected": "лес",
+            "found": "лес",
+            "score": 0.8363,
+            "correct": true
+          },
+          {
+            "query": "транспорт, который летает в небе",
+            "expected": "самолёт",
+            "found": "самолёт",
+            "score": 0.8418,
+            "correct": true
+          },
+          {
+            "query": "вагоны, движущиеся по рельсам",
+            "expected": "поезд",
+            "found": "поезд",
+            "score": 0.8501,
+            "correct": true
+          },
+          {
+            "query": "искусство организованных звуков",
+            "expected": "музыка",
+            "found": "музыка",
+            "score": 0.808,
+            "correct": true
+          },
+          {
+            "query": "отдых организма с закрытыми глазами",
+            "expected": "сон",
+            "found": "болезнь",
+            "score": 0.8162,
+            "correct": false
+          },
+          {
+            "query": "чувство перед возможной опасностью",
+            "expected": "страх",
+            "found": "страх",
+            "score": 0.8567,
+            "correct": true
+          },
+          {
+            "query": "глубокое тёплое чувство к кому-либо",
+            "expected": "любовь",
+            "found": "смелый",
+            "score": 0.8571,
+            "correct": false
+          },
+          {
+            "query": "то, что измеряют часами",
+            "expected": "время",
+            "found": "время",
+            "score": 0.8598,
+            "correct": true
+          },
+          {
+            "query": "прозрачное питьё без цвета",
+            "expected": "вода",
+            "found": "вода",
+            "score": 0.8242,
+            "correct": true
+          },
+          {
+            "query": "звезда, освещающая Землю днём",
+            "expected": "солнце",
+            "found": "луна",
+            "score": 0.8453,
+            "correct": false
+          },
+          {
+            "query": "небесное тело, обращающееся вокруг Земли",
+            "expected": "луна",
+            "found": "луна",
+            "score": 0.8435,
+            "correct": true
+          },
+          {
+            "query": "вещи, которые надевают на тело",
+            "expected": "одежда",
+            "found": "одежда",
+            "score": 0.8328,
+            "correct": true
+          },
+          {
+            "query": "то, что надевают на ноги",
+            "expected": "обувь",
+            "found": "обувь",
+            "score": 0.8358,
+            "correct": true
+          },
+          {
+            "query": "место, где продают товары",
+            "expected": "магазин",
+            "found": "магазин",
+            "score": 0.8552,
+            "correct": true
+          },
+          {
+            "query": "место, где лечат пациентов",
+            "expected": "больница",
+            "found": "больница",
+            "score": 0.8462,
+            "correct": true
+          },
+          {
+            "query": "движущийся с высокой скоростью",
+            "expected": "быстрый",
+            "found": "быстрый",
+            "score": 0.852,
+            "correct": true
+          },
+          {
+            "query": "не боящийся опасности",
+            "expected": "смелый",
+            "found": "страх",
+            "score": 0.851,
+            "correct": false
+          }
+        ]
+      },
+      "synonyms_summary": {
+        "count": 40,
+        "top1": 0.75,
+        "top3": 0.85
+      },
+      "definitions_summary": {
+        "count": 40,
+        "top1": 0.75,
+        "top3": 0.925
+      }
+    },
+    "int4": {
+      "bits_per_component": 4,
+      "bytes_per_word": 196,
+      "compression_vs_float_embedding": 0.8723958333333334,
+      "synonyms": {
+        "count": 40,
+        "top1": 0.725,
+        "top3": 0.875,
+        "examples": [
+          {
+            "query": "пёс",
+            "expected": "собака",
+            "found": "собака",
+            "score": 0.8127,
+            "correct": true
+          },
+          {
+            "query": "кот",
+            "expected": "кошка",
+            "found": "кошка",
+            "score": 0.865,
+            "correct": true
+          },
+          {
+            "query": "машина",
+            "expected": "автомобиль",
+            "found": "автомобиль",
+            "score": 0.889,
+            "correct": true
+          },
+          {
+            "query": "доктор",
+            "expected": "врач",
+            "found": "врач",
+            "score": 0.8873,
+            "correct": true
+          },
+          {
+            "query": "малыш",
+            "expected": "ребёнок",
+            "found": "ребёнок",
+            "score": 0.8477,
+            "correct": true
+          },
+          {
+            "query": "жилище",
+            "expected": "дом",
+            "found": "дом",
+            "score": 0.8705,
+            "correct": true
+          },
+          {
+            "query": "труд",
+            "expected": "работа",
+            "found": "работа",
+            "score": 0.8988,
+            "correct": true
+          },
+          {
+            "query": "печаль",
+            "expected": "грусть",
+            "found": "грусть",
+            "score": 0.8754,
+            "correct": true
+          },
+          {
+            "query": "счастье",
+            "expected": "радость",
+            "found": "любовь",
+            "score": 0.8561,
+            "correct": false
+          },
+          {
+            "query": "пища",
+            "expected": "еда",
+            "found": "еда",
+            "score": 0.8704,
+            "correct": true
+          },
+          {
+            "query": "поддержка",
+            "expected": "помощь",
+            "found": "помощь",
+            "score": 0.8617,
+            "correct": true
+          },
+          {
+            "query": "промах",
+            "expected": "ошибка",
+            "found": "огонь",
+            "score": 0.8322,
+            "correct": false
+          },
+          {
+            "query": "путь",
+            "expected": "дорога",
+            "found": "дорога",
+            "score": 0.8577,
+            "correct": true
+          },
+          {
+            "query": "пламя",
+            "expected": "огонь",
+            "found": "огонь",
+            "score": 0.8431,
+            "correct": true
+          },
+          {
+            "query": "мороз",
+            "expected": "холод",
+            "found": "холод",
+            "score": 0.8602,
+            "correct": true
+          },
+          {
+            "query": "средства",
+            "expected": "деньги",
+            "found": "деньги",
+            "score": 0.8615,
+            "correct": true
+          },
+          {
+            "query": "ПК",
+            "expected": "компьютер",
+            "found": "компьютер",
+            "score": 0.8809,
+            "correct": true
+          },
+          {
+            "query": "смартфон",
+            "expected": "телефон",
+            "found": "телефон",
+            "score": 0.8859,
+            "correct": true
+          },
+          {
+            "query": "педагог",
+            "expected": "учитель",
+            "found": "учитель",
+            "score": 0.8704,
+            "correct": true
+          },
+          {
+            "query": "издание",
+            "expected": "книга",
+            "found": "еда",
+            "score": 0.8541,
+            "correct": false
+          },
+          {
+            "query": "недуг",
+            "expected": "болезнь",
+            "found": "болезнь",
+            "score": 0.8459,
+            "correct": true
+          },
+          {
+            "query": "препарат",
+            "expected": "лекарство",
+            "found": "лекарство",
+            "score": 0.8892,
+            "correct": true
+          },
+          {
+            "query": "водоём",
+            "expected": "море",
+            "found": "вода",
+            "score": 0.8882,
+            "correct": false
+          },
+          {
+            "query": "чаща",
+            "expected": "лес",
+            "found": "вода",
+            "score": 0.8197,
+            "correct": false
+          },
+          {
+            "query": "аэроплан",
+            "expected": "самолёт",
+            "found": "самолёт",
+            "score": 0.8392,
+            "correct": true
+          },
+          {
+            "query": "состав",
+            "expected": "поезд",
+            "found": "огонь",
+            "score": 0.853,
+            "correct": false
+          },
+          {
+            "query": "мелодия",
+            "expected": "музыка",
+            "found": "музыка",
+            "score": 0.8499,
+            "correct": true
+          },
+          {
+            "query": "сновидение",
+            "expected": "сон",
+            "found": "сон",
+            "score": 0.8749,
+            "correct": true
+          },
+          {
+            "query": "боязнь",
+            "expected": "страх",
+            "found": "страх",
+            "score": 0.849,
+            "correct": true
+          },
+          {
+            "query": "привязанность",
+            "expected": "любовь",
+            "found": "работа",
+            "score": 0.8241,
+            "correct": false
+          },
+          {
+            "query": "период",
+            "expected": "время",
+            "found": "время",
+            "score": 0.8646,
+            "correct": true
+          },
+          {
+            "query": "жидкость",
+            "expected": "вода",
+            "found": "вода",
+            "score": 0.861,
+            "correct": true
+          },
+          {
+            "query": "светило",
+            "expected": "солнце",
+            "found": "солнце",
+            "score": 0.827,
+            "correct": true
+          },
+          {
+            "query": "спутник",
+            "expected": "луна",
+            "found": "солнце",
+            "score": 0.8166,
+            "correct": false
+          },
+          {
+            "query": "наряд",
+            "expected": "одежда",
+            "found": "работа",
+            "score": 0.8299,
+            "correct": false
+          },
+          {
+            "query": "ботинки",
+            "expected": "обувь",
+            "found": "обувь",
+            "score": 0.8665,
+            "correct": true
+          },
+          {
+            "query": "лавка",
+            "expected": "магазин",
+            "found": "еда",
+            "score": 0.8221,
+            "correct": false
+          },
+          {
+            "query": "клиника",
+            "expected": "больница",
+            "found": "больница",
+            "score": 0.8622,
+            "correct": true
+          },
+          {
+            "query": "скорый",
+            "expected": "быстрый",
+            "found": "сон",
+            "score": 0.8491,
+            "correct": false
+          },
+          {
+            "query": "храбрый",
+            "expected": "смелый",
+            "found": "смелый",
+            "score": 0.8308,
+            "correct": true
+          }
+        ]
+      },
+      "definitions": {
+        "count": 40,
+        "top1": 0.7,
+        "top3": 0.9,
+        "examples": [
+          {
+            "query": "домашнее животное, которое лает",
+            "expected": "собака",
+            "found": "собака",
+            "score": 0.8384,
+            "correct": true
+          },
+          {
+            "query": "домашнее животное, которое мяукает",
+            "expected": "кошка",
+            "found": "собака",
+            "score": 0.8235,
+            "correct": false
+          },
+          {
+            "query": "транспорт с мотором и четырьмя колёсами",
+            "expected": "автомобиль",
+            "found": "автомобиль",
+            "score": 0.839,
+            "correct": true
+          },
+          {
+            "query": "человек, который лечит больных",
+            "expected": "врач",
+            "found": "врач",
+            "score": 0.8518,
+            "correct": true
+          },
+          {
+            "query": "маленький человек",
+            "expected": "ребёнок",
+            "found": "ребёнок",
+            "score": 0.8636,
+            "correct": true
+          },
+          {
+            "query": "место, где живут люди",
+            "expected": "дом",
+            "found": "море",
+            "score": 0.8032,
+            "correct": false
+          },
+          {
+            "query": "занятие, за которое получают зарплату",
+            "expected": "работа",
+            "found": "работа",
+            "score": 0.843,
+            "correct": true
+          },
+          {
+            "query": "тяжёлое чувство без радости",
+            "expected": "грусть",
+            "found": "грусть",
+            "score": 0.8519,
+            "correct": true
+          },
+          {
+            "query": "приятное чувство от хорошего события",
+            "expected": "радость",
+            "found": "радость",
+            "score": 0.8468,
+            "correct": true
+          },
+          {
+            "query": "то, что люди едят",
+            "expected": "еда",
+            "found": "еда",
+            "score": 0.8858,
+            "correct": true
+          },
+          {
+            "query": "действие, облегчающее чужую задачу",
+            "expected": "помощь",
+            "found": "радость",
+            "score": 0.8405,
+            "correct": false
+          },
+          {
+            "query": "неправильный результат действия",
+            "expected": "ошибка",
+            "found": "ошибка",
+            "score": 0.8241,
+            "correct": true
+          },
+          {
+            "query": "полоса для движения между местами",
+            "expected": "дорога",
+            "found": "дорога",
+            "score": 0.8131,
+            "correct": true
+          },
+          {
+            "query": "горячее свечение при горении",
+            "expected": "огонь",
+            "found": "огонь",
+            "score": 0.8301,
+            "correct": true
+          },
+          {
+            "query": "состояние с очень низкой температурой",
+            "expected": "холод",
+            "found": "болезнь",
+            "score": 0.8513,
+            "correct": false
+          },
+          {
+            "query": "то, чем оплачивают покупки",
+            "expected": "деньги",
+            "found": "магазин",
+            "score": 0.8418,
+            "correct": false
+          },
+          {
+            "query": "электронное устройство для обработки данных",
+            "expected": "компьютер",
+            "found": "компьютер",
+            "score": 0.8347,
+            "correct": true
+          },
+          {
+            "query": "карманное устройство для звонков",
+            "expected": "телефон",
+            "found": "телефон",
+            "score": 0.8347,
+            "correct": true
+          },
+          {
+            "query": "человек, который обучает учеников",
+            "expected": "учитель",
+            "found": "учитель",
+            "score": 0.8747,
+            "correct": true
+          },
+          {
+            "query": "текст на переплетённых страницах",
+            "expected": "книга",
+            "found": "ребёнок",
+            "score": 0.8201,
+            "correct": false
+          },
+          {
+            "query": "нарушение здоровья организма",
+            "expected": "болезнь",
+            "found": "болезнь",
+            "score": 0.8686,
+            "correct": true
+          },
+          {
+            "query": "вещество для лечения болезни",
+            "expected": "лекарство",
+            "found": "лекарство",
+            "score": 0.8501,
+            "correct": true
+          },
+          {
+            "query": "огромное пространство солёной воды",
+            "expected": "море",
+            "found": "солнце",
+            "score": 0.8119,
+            "correct": false
+          },
+          {
+            "query": "большая территория, покрытая деревьями",
+            "expected": "лес",
+            "found": "лес",
+            "score": 0.8281,
+            "correct": true
+          },
+          {
+            "query": "транспорт, который летает в небе",
+            "expected": "самолёт",
+            "found": "самолёт",
+            "score": 0.8407,
+            "correct": true
+          },
+          {
+            "query": "вагоны, движущиеся по рельсам",
+            "expected": "поезд",
+            "found": "поезд",
+            "score": 0.8437,
+            "correct": true
+          },
+          {
+            "query": "искусство организованных звуков",
+            "expected": "музыка",
+            "found": "музыка",
+            "score": 0.8046,
+            "correct": true
+          },
+          {
+            "query": "отдых организма с закрытыми глазами",
+            "expected": "сон",
+            "found": "болезнь",
+            "score": 0.8263,
+            "correct": false
+          },
+          {
+            "query": "чувство перед возможной опасностью",
+            "expected": "страх",
+            "found": "страх",
+            "score": 0.8511,
+            "correct": true
+          },
+          {
+            "query": "глубокое тёплое чувство к кому-либо",
+            "expected": "любовь",
+            "found": "радость",
+            "score": 0.8501,
+            "correct": false
+          },
+          {
+            "query": "то, что измеряют часами",
+            "expected": "время",
+            "found": "время",
+            "score": 0.8579,
+            "correct": true
+          },
+          {
+            "query": "прозрачное питьё без цвета",
+            "expected": "вода",
+            "found": "вода",
+            "score": 0.8222,
+            "correct": true
+          },
+          {
+            "query": "звезда, освещающая Землю днём",
+            "expected": "солнце",
+            "found": "луна",
+            "score": 0.8425,
+            "correct": false
+          },
+          {
+            "query": "небесное тело, обращающееся вокруг Земли",
+            "expected": "луна",
+            "found": "огонь",
+            "score": 0.85,
+            "correct": false
+          },
+          {
+            "query": "вещи, которые надевают на тело",
+            "expected": "одежда",
+            "found": "одежда",
+            "score": 0.8322,
+            "correct": true
+          },
+          {
+            "query": "то, что надевают на ноги",
+            "expected": "обувь",
+            "found": "обувь",
+            "score": 0.8299,
+            "correct": true
+          },
+          {
+            "query": "место, где продают товары",
+            "expected": "магазин",
+            "found": "магазин",
+            "score": 0.848,
+            "correct": true
+          },
+          {
+            "query": "место, где лечат пациентов",
+            "expected": "больница",
+            "found": "больница",
+            "score": 0.8459,
+            "correct": true
+          },
+          {
+            "query": "движущийся с высокой скоростью",
+            "expected": "быстрый",
+            "found": "быстрый",
+            "score": 0.8446,
+            "correct": true
+          },
+          {
+            "query": "не боящийся опасности",
+            "expected": "смелый",
+            "found": "страх",
+            "score": 0.8392,
+            "correct": false
+          }
+        ]
+      },
+      "synonyms_summary": {
+        "count": 40,
+        "top1": 0.725,
+        "top3": 0.875
+      },
+      "definitions_summary": {
+        "count": 40,
+        "top1": 0.7,
+        "top3": 0.9
+      }
+    },
+    "sign1": {
+      "bits_per_component": 1,
+      "bytes_per_word": 48,
+      "compression_vs_float_embedding": 0.96875,
+      "synonyms": {
+        "count": 40,
+        "top1": 0.125,
+        "top3": 0.375,
+        "examples": [
+          {
+            "query": "пёс",
+            "expected": "собака",
+            "found": "лес",
+            "score": 0.8021,
+            "correct": false
+          },
+          {
+            "query": "кот",
+            "expected": "кошка",
+            "found": "любовь",
+            "score": 0.8594,
+            "correct": false
+          },
+          {
+            "query": "машина",
+            "expected": "автомобиль",
+            "found": "вода",
+            "score": 0.849,
+            "correct": false
+          },
+          {
+            "query": "доктор",
+            "expected": "врач",
+            "found": "работа",
+            "score": 0.8385,
+            "correct": false
+          },
+          {
+            "query": "малыш",
+            "expected": "ребёнок",
+            "found": "радость",
+            "score": 0.849,
+            "correct": false
+          },
+          {
+            "query": "жилище",
+            "expected": "дом",
+            "found": "кошка",
+            "score": 0.8646,
+            "correct": false
+          },
+          {
+            "query": "труд",
+            "expected": "работа",
+            "found": "работа",
+            "score": 0.8385,
+            "correct": true
+          },
+          {
+            "query": "печаль",
+            "expected": "грусть",
+            "found": "радость",
+            "score": 0.8177,
+            "correct": false
+          },
+          {
+            "query": "счастье",
+            "expected": "радость",
+            "found": "любовь",
+            "score": 0.8438,
+            "correct": false
+          },
+          {
+            "query": "пища",
+            "expected": "еда",
+            "found": "еда",
+            "score": 0.849,
+            "correct": true
+          },
+          {
+            "query": "поддержка",
+            "expected": "помощь",
+            "found": "любовь",
+            "score": 0.849,
+            "correct": false
+          },
+          {
+            "query": "промах",
+            "expected": "ошибка",
+            "found": "вода",
+            "score": 0.8021,
+            "correct": false
+          },
+          {
+            "query": "путь",
+            "expected": "дорога",
+            "found": "любовь",
+            "score": 0.8073,
+            "correct": false
+          },
+          {
+            "query": "пламя",
+            "expected": "огонь",
+            "found": "компьютер",
+            "score": 0.8125,
+            "correct": false
+          },
+          {
+            "query": "мороз",
+            "expected": "холод",
+            "found": "дорога",
+            "score": 0.8281,
+            "correct": false
+          },
+          {
+            "query": "средства",
+            "expected": "деньги",
+            "found": "любовь",
+            "score": 0.8698,
+            "correct": false
+          },
+          {
+            "query": "ПК",
+            "expected": "компьютер",
+            "found": "компьютер",
+            "score": 0.8229,
+            "correct": true
+          },
+          {
+            "query": "смартфон",
+            "expected": "телефон",
+            "found": "компьютер",
+            "score": 0.8333,
+            "correct": false
+          },
+          {
+            "query": "педагог",
+            "expected": "учитель",
+            "found": "любовь",
+            "score": 0.8385,
+            "correct": false
+          },
+          {
+            "query": "издание",
+            "expected": "книга",
+            "found": "любовь",
+            "score": 0.8594,
+            "correct": false
+          },
+          {
+            "query": "недуг",
+            "expected": "болезнь",
+            "found": "радость",
+            "score": 0.8229,
+            "correct": false
+          },
+          {
+            "query": "препарат",
+            "expected": "лекарство",
+            "found": "лекарство",
+            "score": 0.8542,
+            "correct": true
+          },
+          {
+            "query": "водоём",
+            "expected": "море",
+            "found": "вода",
+            "score": 0.8438,
+            "correct": false
+          },
+          {
+            "query": "чаща",
+            "expected": "лес",
+            "found": "вода",
+            "score": 0.776,
+            "correct": false
+          },
+          {
+            "query": "аэроплан",
+            "expected": "самолёт",
+            "found": "самолёт",
+            "score": 0.8333,
+            "correct": true
+          },
+          {
+            "query": "состав",
+            "expected": "поезд",
+            "found": "любовь",
+            "score": 0.8333,
+            "correct": false
+          },
+          {
+            "query": "мелодия",
+            "expected": "музыка",
+            "found": "любовь",
+            "score": 0.8229,
+            "correct": false
+          },
+          {
+            "query": "сновидение",
+            "expected": "сон",
+            "found": "радость",
+            "score": 0.7969,
+            "correct": false
+          },
+          {
+            "query": "боязнь",
+            "expected": "страх",
+            "found": "любовь",
+            "score": 0.8438,
+            "correct": false
+          },
+          {
+            "query": "привязанность",
+            "expected": "любовь",
+            "found": "радость",
+            "score": 0.8229,
+            "correct": false
+          },
+          {
+            "query": "период",
+            "expected": "время",
+            "found": "вода",
+            "score": 0.8542,
+            "correct": false
+          },
+          {
+            "query": "жидкость",
+            "expected": "вода",
+            "found": "компьютер",
+            "score": 0.8229,
+            "correct": false
+          },
+          {
+            "query": "светило",
+            "expected": "солнце",
+            "found": "любовь",
+            "score": 0.8073,
+            "correct": false
+          },
+          {
+            "query": "спутник",
+            "expected": "луна",
+            "found": "вода",
+            "score": 0.8385,
+            "correct": false
+          },
+          {
+            "query": "наряд",
+            "expected": "одежда",
+            "found": "вода",
+            "score": 0.8229,
+            "correct": false
+          },
+          {
+            "query": "ботинки",
+            "expected": "обувь",
+            "found": "холод",
+            "score": 0.8385,
+            "correct": false
+          },
+          {
+            "query": "лавка",
+            "expected": "магазин",
+            "found": "море",
+            "score": 0.8177,
+            "correct": false
+          },
+          {
+            "query": "клиника",
+            "expected": "больница",
+            "found": "любовь",
+            "score": 0.8229,
+            "correct": false
+          },
+          {
+            "query": "скорый",
+            "expected": "быстрый",
+            "found": "ошибка",
+            "score": 0.7917,
+            "correct": false
+          },
+          {
+            "query": "храбрый",
+            "expected": "смелый",
+            "found": "радость",
+            "score": 0.7969,
+            "correct": false
+          }
+        ]
+      },
+      "definitions": {
+        "count": 40,
+        "top1": 0.25,
+        "top3": 0.475,
+        "examples": [
+          {
+            "query": "домашнее животное, которое лает",
+            "expected": "собака",
+            "found": "дом",
+            "score": 0.8021,
+            "correct": false
+          },
+          {
+            "query": "домашнее животное, которое мяукает",
+            "expected": "кошка",
+            "found": "кошка",
+            "score": 0.7917,
+            "correct": true
+          },
+          {
+            "query": "транспорт с мотором и четырьмя колёсами",
+            "expected": "автомобиль",
+            "found": "любовь",
+            "score": 0.8438,
+            "correct": false
+          },
+          {
+            "query": "человек, который лечит больных",
+            "expected": "врач",
+            "found": "компьютер",
+            "score": 0.7865,
+            "correct": false
+          },
+          {
+            "query": "маленький человек",
+            "expected": "ребёнок",
+            "found": "любовь",
+            "score": 0.8281,
+            "correct": false
+          },
+          {
+            "query": "место, где живут люди",
+            "expected": "дом",
+            "found": "ошибка",
+            "score": 0.8021,
+            "correct": false
+          },
+          {
+            "query": "занятие, за которое получают зарплату",
+            "expected": "работа",
+            "found": "компьютер",
+            "score": 0.8073,
+            "correct": false
+          },
+          {
+            "query": "тяжёлое чувство без радости",
+            "expected": "грусть",
+            "found": "любовь",
+            "score": 0.8385,
+            "correct": false
+          },
+          {
+            "query": "приятное чувство от хорошего события",
+            "expected": "радость",
+            "found": "радость",
+            "score": 0.8229,
+            "correct": true
+          },
+          {
+            "query": "то, что люди едят",
+            "expected": "еда",
+            "found": "еда",
+            "score": 0.8281,
+            "correct": true
+          },
+          {
+            "query": "действие, облегчающее чужую задачу",
+            "expected": "помощь",
+            "found": "поезд",
+            "score": 0.8333,
+            "correct": false
+          },
+          {
+            "query": "неправильный результат действия",
+            "expected": "ошибка",
+            "found": "ошибка",
+            "score": 0.8594,
+            "correct": true
+          },
+          {
+            "query": "полоса для движения между местами",
+            "expected": "дорога",
+            "found": "компьютер",
+            "score": 0.8125,
+            "correct": false
+          },
+          {
+            "query": "горячее свечение при горении",
+            "expected": "огонь",
+            "found": "компьютер",
+            "score": 0.776,
+            "correct": false
+          },
+          {
+            "query": "состояние с очень низкой температурой",
+            "expected": "холод",
+            "found": "ошибка",
+            "score": 0.8281,
+            "correct": false
+          },
+          {
+            "query": "то, чем оплачивают покупки",
+            "expected": "деньги",
+            "found": "ошибка",
+            "score": 0.7865,
+            "correct": false
+          },
+          {
+            "query": "электронное устройство для обработки данных",
+            "expected": "компьютер",
+            "found": "автомобиль",
+            "score": 0.8125,
+            "correct": false
+          },
+          {
+            "query": "карманное устройство для звонков",
+            "expected": "телефон",
+            "found": "телефон",
+            "score": 0.7708,
+            "correct": true
+          },
+          {
+            "query": "человек, который обучает учеников",
+            "expected": "учитель",
+            "found": "любовь",
+            "score": 0.8073,
+            "correct": false
+          },
+          {
+            "query": "текст на переплетённых страницах",
+            "expected": "книга",
+            "found": "ошибка",
+            "score": 0.8021,
+            "correct": false
+          },
+          {
+            "query": "нарушение здоровья организма",
+            "expected": "болезнь",
+            "found": "еда",
+            "score": 0.8073,
+            "correct": false
+          },
+          {
+            "query": "вещество для лечения болезни",
+            "expected": "лекарство",
+            "found": "лекарство",
+            "score": 0.776,
+            "correct": true
+          },
+          {
+            "query": "огромное пространство солёной воды",
+            "expected": "море",
+            "found": "любовь",
+            "score": 0.8021,
+            "correct": false
+          },
+          {
+            "query": "большая территория, покрытая деревьями",
+            "expected": "лес",
+            "found": "лес",
+            "score": 0.8177,
+            "correct": true
+          },
+          {
+            "query": "транспорт, который летает в небе",
+            "expected": "самолёт",
+            "found": "компьютер",
+            "score": 0.8125,
+            "correct": false
+          },
+          {
+            "query": "вагоны, движущиеся по рельсам",
+            "expected": "поезд",
+            "found": "поезд",
+            "score": 0.8281,
+            "correct": true
+          },
+          {
+            "query": "искусство организованных звуков",
+            "expected": "музыка",
+            "found": "любовь",
+            "score": 0.7865,
+            "correct": false
+          },
+          {
+            "query": "отдых организма с закрытыми глазами",
+            "expected": "сон",
+            "found": "холод",
+            "score": 0.8021,
+            "correct": false
+          },
+          {
+            "query": "чувство перед возможной опасностью",
+            "expected": "страх",
+            "found": "радость",
+            "score": 0.8073,
+            "correct": false
+          },
+          {
+            "query": "глубокое тёплое чувство к кому-либо",
+            "expected": "любовь",
+            "found": "любовь",
+            "score": 0.849,
+            "correct": true
+          },
+          {
+            "query": "то, что измеряют часами",
+            "expected": "время",
+            "found": "компьютер",
+            "score": 0.875,
+            "correct": false
+          },
+          {
+            "query": "прозрачное питьё без цвета",
+            "expected": "вода",
+            "found": "лекарство",
+            "score": 0.7969,
+            "correct": false
+          },
+          {
+            "query": "звезда, освещающая Землю днём",
+            "expected": "солнце",
+            "found": "кошка",
+            "score": 0.8073,
+            "correct": false
+          },
+          {
+            "query": "небесное тело, обращающееся вокруг Земли",
+            "expected": "луна",
+            "found": "кошка",
+            "score": 0.8177,
+            "correct": false
+          },
+          {
+            "query": "вещи, которые надевают на тело",
+            "expected": "одежда",
+            "found": "компьютер",
+            "score": 0.8125,
+            "correct": false
+          },
+          {
+            "query": "то, что надевают на ноги",
+            "expected": "обувь",
+            "found": "любовь",
+            "score": 0.8073,
+            "correct": false
+          },
+          {
+            "query": "место, где продают товары",
+            "expected": "магазин",
+            "found": "лекарство",
+            "score": 0.8281,
+            "correct": false
+          },
+          {
+            "query": "место, где лечат пациентов",
+            "expected": "больница",
+            "found": "больница",
+            "score": 0.7865,
+            "correct": true
+          },
+          {
+            "query": "движущийся с высокой скоростью",
+            "expected": "быстрый",
+            "found": "любовь",
+            "score": 0.8542,
+            "correct": false
+          },
+          {
+            "query": "не боящийся опасности",
+            "expected": "смелый",
+            "found": "ошибка",
+            "score": 0.7917,
+            "correct": false
+          }
+        ]
+      },
+      "synonyms_summary": {
+        "count": 40,
+        "top1": 0.125,
+        "top3": 0.375
+      },
+      "definitions_summary": {
+        "count": 40,
+        "top1": 0.25,
+        "top3": 0.475
+      }
+    }
+  },
+  "chord_sweep": {
+    "32": {
+      "bytes_per_word": 32,
+      "compression_vs_float_embedding": 0.9791666666666666,
+      "synonyms": {
+        "count": 40,
+        "top1": 0.125,
+        "top3": 0.225,
+        "examples": [
+          {
+            "query": "пёс",
+            "expected": "собака",
+            "found": "собака",
+            "score": 0.8245,
+            "correct": true
+          },
+          {
+            "query": "кот",
+            "expected": "кошка",
+            "found": "автомобиль",
+            "score": 0.7721,
+            "correct": false
+          },
+          {
+            "query": "машина",
+            "expected": "автомобиль",
+            "found": "автомобиль",
+            "score": 0.8244,
+            "correct": true
+          },
+          {
+            "query": "доктор",
+            "expected": "врач",
+            "found": "дорога",
+            "score": 0.7978,
+            "correct": false
+          },
+          {
+            "query": "малыш",
+            "expected": "ребёнок",
+            "found": "страх",
+            "score": 0.7688,
+            "correct": false
+          },
+          {
+            "query": "жилище",
+            "expected": "дом",
+            "found": "магазин",
+            "score": 0.7788,
+            "correct": false
+          },
+          {
+            "query": "труд",
+            "expected": "работа",
+            "found": "автомобиль",
+            "score": 0.8379,
+            "correct": false
+          },
+          {
+            "query": "печаль",
+            "expected": "грусть",
+            "found": "обувь",
+            "score": 0.8254,
+            "correct": false
+          },
+          {
+            "query": "счастье",
+            "expected": "радость",
+            "found": "автомобиль",
+            "score": 0.8183,
+            "correct": false
+          },
+          {
+            "query": "пища",
+            "expected": "еда",
+            "found": "огонь",
+            "score": 0.8006,
+            "correct": false
+          },
+          {
+            "query": "поддержка",
+            "expected": "помощь",
+            "found": "компьютер",
+            "score": 0.7831,
+            "correct": false
+          },
+          {
+            "query": "промах",
+            "expected": "ошибка",
+            "found": "страх",
+            "score": 0.7629,
+            "correct": false
+          },
+          {
+            "query": "путь",
+            "expected": "дорога",
+            "found": "автомобиль",
+            "score": 0.847,
+            "correct": false
+          },
+          {
+            "query": "пламя",
+            "expected": "огонь",
+            "found": "страх",
+            "score": 0.7648,
+            "correct": false
+          },
+          {
+            "query": "мороз",
+            "expected": "холод",
+            "found": "море",
+            "score": 0.7663,
+            "correct": false
+          },
+          {
+            "query": "средства",
+            "expected": "деньги",
+            "found": "автомобиль",
+            "score": 0.8207,
+            "correct": false
+          },
+          {
+            "query": "ПК",
+            "expected": "компьютер",
+            "found": "автомобиль",
+            "score": 0.7916,
+            "correct": false
+          },
+          {
+            "query": "смартфон",
+            "expected": "телефон",
+            "found": "еда",
+            "score": 0.9096,
+            "correct": false
+          },
+          {
+            "query": "педагог",
+            "expected": "учитель",
+            "found": "автомобиль",
+            "score": 0.846,
+            "correct": false
+          },
+          {
+            "query": "издание",
+            "expected": "книга",
+            "found": "автомобиль",
+            "score": 0.8477,
+            "correct": false
+          },
+          {
+            "query": "недуг",
+            "expected": "болезнь",
+            "found": "еда",
+            "score": 0.8513,
+            "correct": false
+          },
+          {
+            "query": "препарат",
+            "expected": "лекарство",
+            "found": "автомобиль",
+            "score": 0.8995,
+            "correct": false
+          },
+          {
+            "query": "водоём",
+            "expected": "море",
+            "found": "вода",
+            "score": 0.8195,
+            "correct": false
+          },
+          {
+            "query": "чаща",
+            "expected": "лес",
+            "found": "еда",
+            "score": 0.7874,
+            "correct": false
+          },
+          {
+            "query": "аэроплан",
+            "expected": "самолёт",
+            "found": "одежда",
+            "score": 0.7091,
+            "correct": false
+          },
+          {
+            "query": "состав",
+            "expected": "поезд",
+            "found": "автомобиль",
+            "score": 0.8127,
+            "correct": false
+          },
+          {
+            "query": "мелодия",
+            "expected": "музыка",
+            "found": "автомобиль",
+            "score": 0.7899,
+            "correct": false
+          },
+          {
+            "query": "сновидение",
+            "expected": "сон",
+            "found": "еда",
+            "score": 0.8643,
+            "correct": false
+          },
+          {
+            "query": "боязнь",
+            "expected": "страх",
+            "found": "еда",
+            "score": 0.7634,
+            "correct": false
+          },
+          {
+            "query": "привязанность",
+            "expected": "любовь",
+            "found": "обувь",
+            "score": 0.6897,
+            "correct": false
+          },
+          {
+            "query": "период",
+            "expected": "время",
+            "found": "автомобиль",
+            "score": 0.8384,
+            "correct": false
+          },
+          {
+            "query": "жидкость",
+            "expected": "вода",
+            "found": "вода",
+            "score": 0.7582,
+            "correct": true
+          },
+          {
+            "query": "светило",
+            "expected": "солнце",
+            "found": "магазин",
+            "score": 0.7515,
+            "correct": false
+          },
+          {
+            "query": "спутник",
+            "expected": "луна",
+            "found": "дом",
+            "score": 0.7574,
+            "correct": false
+          },
+          {
+            "query": "наряд",
+            "expected": "одежда",
+            "found": "автомобиль",
+            "score": 0.7665,
+            "correct": false
+          },
+          {
+            "query": "ботинки",
+            "expected": "обувь",
+            "found": "обувь",
+            "score": 0.8235,
+            "correct": true
+          },
+          {
+            "query": "лавка",
+            "expected": "магазин",
+            "found": "автомобиль",
+            "score": 0.8288,
+            "correct": false
+          },
+          {
+            "query": "клиника",
+            "expected": "больница",
+            "found": "дом",
+            "score": 0.7532,
+            "correct": false
+          },
+          {
+            "query": "скорый",
+            "expected": "быстрый",
+            "found": "быстрый",
+            "score": 0.7924,
+            "correct": true
+          },
+          {
+            "query": "храбрый",
+            "expected": "смелый",
+            "found": "еда",
+            "score": 0.8022,
+            "correct": false
+          }
+        ]
+      },
+      "definitions": {
+        "count": 40,
+        "top1": 0.175,
+        "top3": 0.325,
+        "examples": [
+          {
+            "query": "домашнее животное, которое лает",
+            "expected": "собака",
+            "found": "автомобиль",
+            "score": 0.791,
+            "correct": false
+          },
+          {
+            "query": "домашнее животное, которое мяукает",
+            "expected": "кошка",
+            "found": "еда",
+            "score": 0.7905,
+            "correct": false
+          },
+          {
+            "query": "транспорт с мотором и четырьмя колёсами",
+            "expected": "автомобиль",
+            "found": "сон",
+            "score": 0.791,
+            "correct": false
+          },
+          {
+            "query": "человек, который лечит больных",
+            "expected": "врач",
+            "found": "лекарство",
+            "score": 0.7228,
+            "correct": false
+          },
+          {
+            "query": "маленький человек",
+            "expected": "ребёнок",
+            "found": "ребёнок",
+            "score": 0.8102,
+            "correct": true
+          },
+          {
+            "query": "место, где живут люди",
+            "expected": "дом",
+            "found": "автомобиль",
+            "score": 0.7588,
+            "correct": false
+          },
+          {
+            "query": "занятие, за которое получают зарплату",
+            "expected": "работа",
+            "found": "еда",
+            "score": 0.7887,
+            "correct": false
+          },
+          {
+            "query": "тяжёлое чувство без радости",
+            "expected": "грусть",
+            "found": "одежда",
+            "score": 0.8097,
+            "correct": false
+          },
+          {
+            "query": "приятное чувство от хорошего события",
+            "expected": "радость",
+            "found": "работа",
+            "score": 0.7869,
+            "correct": false
+          },
+          {
+            "query": "то, что люди едят",
+            "expected": "еда",
+            "found": "огонь",
+            "score": 0.7298,
+            "correct": false
+          },
+          {
+            "query": "действие, облегчающее чужую задачу",
+            "expected": "помощь",
+            "found": "автомобиль",
+            "score": 0.7699,
+            "correct": false
+          },
+          {
+            "query": "неправильный результат действия",
+            "expected": "ошибка",
+            "found": "автомобиль",
+            "score": 0.785,
+            "correct": false
+          },
+          {
+            "query": "полоса для движения между местами",
+            "expected": "дорога",
+            "found": "дорога",
+            "score": 0.7243,
+            "correct": true
+          },
+          {
+            "query": "горячее свечение при горении",
+            "expected": "огонь",
+            "found": "вода",
+            "score": 0.7484,
+            "correct": false
+          },
+          {
+            "query": "состояние с очень низкой температурой",
+            "expected": "холод",
+            "found": "автомобиль",
+            "score": 0.7571,
+            "correct": false
+          },
+          {
+            "query": "то, чем оплачивают покупки",
+            "expected": "деньги",
+            "found": "одежда",
+            "score": 0.7483,
+            "correct": false
+          },
+          {
+            "query": "электронное устройство для обработки данных",
+            "expected": "компьютер",
+            "found": "дорога",
+            "score": 0.8084,
+            "correct": false
+          },
+          {
+            "query": "карманное устройство для звонков",
+            "expected": "телефон",
+            "found": "еда",
+            "score": 0.7495,
+            "correct": false
+          },
+          {
+            "query": "человек, который обучает учеников",
+            "expected": "учитель",
+            "found": "еда",
+            "score": 0.7883,
+            "correct": false
+          },
+          {
+            "query": "текст на переплетённых страницах",
+            "expected": "книга",
+            "found": "еда",
+            "score": 0.7846,
+            "correct": false
+          },
+          {
+            "query": "нарушение здоровья организма",
+            "expected": "болезнь",
+            "found": "вода",
+            "score": 0.7676,
+            "correct": false
+          },
+          {
+            "query": "вещество для лечения болезни",
+            "expected": "лекарство",
+            "found": "лекарство",
+            "score": 0.8152,
+            "correct": true
+          },
+          {
+            "query": "огромное пространство солёной воды",
+            "expected": "море",
+            "found": "вода",
+            "score": 0.7391,
+            "correct": false
+          },
+          {
+            "query": "большая территория, покрытая деревьями",
+            "expected": "лес",
+            "found": "обувь",
+            "score": 0.713,
+            "correct": false
+          },
+          {
+            "query": "транспорт, который летает в небе",
+            "expected": "самолёт",
+            "found": "одежда",
+            "score": 0.7912,
+            "correct": false
+          },
+          {
+            "query": "вагоны, движущиеся по рельсам",
+            "expected": "поезд",
+            "found": "поезд",
+            "score": 0.8269,
+            "correct": true
+          },
+          {
+            "query": "искусство организованных звуков",
+            "expected": "музыка",
+            "found": "работа",
+            "score": 0.7029,
+            "correct": false
+          },
+          {
+            "query": "отдых организма с закрытыми глазами",
+            "expected": "сон",
+            "found": "автомобиль",
+            "score": 0.8277,
+            "correct": false
+          },
+          {
+            "query": "чувство перед возможной опасностью",
+            "expected": "страх",
+            "found": "страх",
+            "score": 0.7462,
+            "correct": true
+          },
+          {
+            "query": "глубокое тёплое чувство к кому-либо",
+            "expected": "любовь",
+            "found": "вода",
+            "score": 0.7468,
+            "correct": false
+          },
+          {
+            "query": "то, что измеряют часами",
+            "expected": "время",
+            "found": "еда",
+            "score": 0.8184,
+            "correct": false
+          },
+          {
+            "query": "прозрачное питьё без цвета",
+            "expected": "вода",
+            "found": "самолёт",
+            "score": 0.7986,
+            "correct": false
+          },
+          {
+            "query": "звезда, освещающая Землю днём",
+            "expected": "солнце",
+            "found": "солнце",
+            "score": 0.7288,
+            "correct": true
+          },
+          {
+            "query": "небесное тело, обращающееся вокруг Земли",
+            "expected": "луна",
+            "found": "солнце",
+            "score": 0.7208,
+            "correct": false
+          },
+          {
+            "query": "вещи, которые надевают на тело",
+            "expected": "одежда",
+            "found": "страх",
+            "score": 0.7818,
+            "correct": false
+          },
+          {
+            "query": "то, что надевают на ноги",
+            "expected": "обувь",
+            "found": "огонь",
+            "score": 0.7916,
+            "correct": false
+          },
+          {
+            "query": "место, где продают товары",
+            "expected": "магазин",
+            "found": "автомобиль",
+            "score": 0.7795,
+            "correct": false
+          },
+          {
+            "query": "место, где лечат пациентов",
+            "expected": "больница",
+            "found": "больница",
+            "score": 0.6943,
+            "correct": true
+          },
+          {
+            "query": "движущийся с высокой скоростью",
+            "expected": "быстрый",
+            "found": "автомобиль",
+            "score": 0.8064,
+            "correct": false
+          },
+          {
+            "query": "не боящийся опасности",
+            "expected": "смелый",
+            "found": "страх",
+            "score": 0.7986,
+            "correct": false
+          }
+        ]
+      },
+      "synonyms_summary": {
+        "count": 40,
+        "top1": 0.125,
+        "top3": 0.225
+      },
+      "definitions_summary": {
+        "count": 40,
+        "top1": 0.175,
+        "top3": 0.325
+      }
+    },
+    "64": {
+      "bytes_per_word": 64,
+      "compression_vs_float_embedding": 0.9583333333333334,
+      "synonyms": {
+        "count": 40,
+        "top1": 0.3,
+        "top3": 0.475,
+        "examples": [
+          {
+            "query": "пёс",
+            "expected": "собака",
+            "found": "смелый",
+            "score": 0.7921,
+            "correct": false
+          },
+          {
+            "query": "кот",
+            "expected": "кошка",
+            "found": "кошка",
+            "score": 0.8074,
+            "correct": true
+          },
+          {
+            "query": "машина",
+            "expected": "автомобиль",
+            "found": "автомобиль",
+            "score": 0.8502,
+            "correct": true
+          },
+          {
+            "query": "доктор",
+            "expected": "врач",
+            "found": "врач",
+            "score": 0.8183,
+            "correct": true
+          },
+          {
+            "query": "малыш",
+            "expected": "ребёнок",
+            "found": "смелый",
+            "score": 0.7886,
+            "correct": false
+          },
+          {
+            "query": "жилище",
+            "expected": "дом",
+            "found": "время",
+            "score": 0.8341,
+            "correct": false
+          },
+          {
+            "query": "труд",
+            "expected": "работа",
+            "found": "работа",
+            "score": 0.837,
+            "correct": true
+          },
+          {
+            "query": "печаль",
+            "expected": "грусть",
+            "found": "радость",
+            "score": 0.7991,
+            "correct": false
+          },
+          {
+            "query": "счастье",
+            "expected": "радость",
+            "found": "помощь",
+            "score": 0.8378,
+            "correct": false
+          },
+          {
+            "query": "пища",
+            "expected": "еда",
+            "found": "ребёнок",
+            "score": 0.7833,
+            "correct": false
+          },
+          {
+            "query": "поддержка",
+            "expected": "помощь",
+            "found": "врач",
+            "score": 0.845,
+            "correct": false
+          },
+          {
+            "query": "промах",
+            "expected": "ошибка",
+            "found": "море",
+            "score": 0.7742,
+            "correct": false
+          },
+          {
+            "query": "путь",
+            "expected": "дорога",
+            "found": "море",
+            "score": 0.8177,
+            "correct": false
+          },
+          {
+            "query": "пламя",
+            "expected": "огонь",
+            "found": "работа",
+            "score": 0.802,
+            "correct": false
+          },
+          {
+            "query": "мороз",
+            "expected": "холод",
+            "found": "море",
+            "score": 0.7467,
+            "correct": false
+          },
+          {
+            "query": "средства",
+            "expected": "деньги",
+            "found": "врач",
+            "score": 0.8272,
+            "correct": false
+          },
+          {
+            "query": "ПК",
+            "expected": "компьютер",
+            "found": "компьютер",
+            "score": 0.829,
+            "correct": true
+          },
+          {
+            "query": "смартфон",
+            "expected": "телефон",
+            "found": "ребёнок",
+            "score": 0.8332,
+            "correct": false
+          },
+          {
+            "query": "педагог",
+            "expected": "учитель",
+            "found": "работа",
+            "score": 0.7925,
+            "correct": false
+          },
+          {
+            "query": "издание",
+            "expected": "книга",
+            "found": "больница",
+            "score": 0.8154,
+            "correct": false
+          },
+          {
+            "query": "недуг",
+            "expected": "болезнь",
+            "found": "море",
+            "score": 0.7984,
+            "correct": false
+          },
+          {
+            "query": "препарат",
+            "expected": "лекарство",
+            "found": "врач",
+            "score": 0.8611,
+            "correct": false
+          },
+          {
+            "query": "водоём",
+            "expected": "море",
+            "found": "врач",
+            "score": 0.871,
+            "correct": false
+          },
+          {
+            "query": "чаща",
+            "expected": "лес",
+            "found": "время",
+            "score": 0.7079,
+            "correct": false
+          },
+          {
+            "query": "аэроплан",
+            "expected": "самолёт",
+            "found": "время",
+            "score": 0.798,
+            "correct": false
+          },
+          {
+            "query": "состав",
+            "expected": "поезд",
+            "found": "поезд",
+            "score": 0.7941,
+            "correct": true
+          },
+          {
+            "query": "мелодия",
+            "expected": "музыка",
+            "found": "музыка",
+            "score": 0.7656,
+            "correct": true
+          },
+          {
+            "query": "сновидение",
+            "expected": "сон",
+            "found": "сон",
+            "score": 0.8646,
+            "correct": true
+          },
+          {
+            "query": "боязнь",
+            "expected": "страх",
+            "found": "вода",
+            "score": 0.7945,
+            "correct": false
+          },
+          {
+            "query": "привязанность",
+            "expected": "любовь",
+            "found": "работа",
+            "score": 0.801,
+            "correct": false
+          },
+          {
+            "query": "период",
+            "expected": "время",
+            "found": "время",
+            "score": 0.8615,
+            "correct": true
+          },
+          {
+            "query": "жидкость",
+            "expected": "вода",
+            "found": "вода",
+            "score": 0.7747,
+            "correct": true
+          },
+          {
+            "query": "светило",
+            "expected": "солнце",
+            "found": "солнце",
+            "score": 0.75,
+            "correct": true
+          },
+          {
+            "query": "спутник",
+            "expected": "луна",
+            "found": "поезд",
+            "score": 0.781,
+            "correct": false
+          },
+          {
+            "query": "наряд",
+            "expected": "одежда",
+            "found": "работа",
+            "score": 0.7881,
+            "correct": false
+          },
+          {
+            "query": "ботинки",
+            "expected": "обувь",
+            "found": "море",
+            "score": 0.7639,
+            "correct": false
+          },
+          {
+            "query": "лавка",
+            "expected": "магазин",
+            "found": "поезд",
+            "score": 0.7899,
+            "correct": false
+          },
+          {
+            "query": "клиника",
+            "expected": "больница",
+            "found": "больница",
+            "score": 0.8558,
+            "correct": true
+          },
+          {
+            "query": "скорый",
+            "expected": "быстрый",
+            "found": "смелый",
+            "score": 0.7874,
+            "correct": false
+          },
+          {
+            "query": "храбрый",
+            "expected": "смелый",
+            "found": "врач",
+            "score": 0.7802,
+            "correct": false
+          }
+        ]
+      },
+      "definitions": {
+        "count": 40,
+        "top1": 0.275,
+        "top3": 0.45,
+        "examples": [
+          {
+            "query": "домашнее животное, которое лает",
+            "expected": "собака",
+            "found": "кошка",
+            "score": 0.784,
+            "correct": false
+          },
+          {
+            "query": "домашнее животное, которое мяукает",
+            "expected": "кошка",
+            "found": "кошка",
+            "score": 0.7636,
+            "correct": true
+          },
+          {
+            "query": "транспорт с мотором и четырьмя колёсами",
+            "expected": "автомобиль",
+            "found": "самолёт",
+            "score": 0.8466,
+            "correct": false
+          },
+          {
+            "query": "человек, который лечит больных",
+            "expected": "врач",
+            "found": "врач",
+            "score": 0.7721,
+            "correct": true
+          },
+          {
+            "query": "маленький человек",
+            "expected": "ребёнок",
+            "found": "самолёт",
+            "score": 0.7816,
+            "correct": false
+          },
+          {
+            "query": "место, где живут люди",
+            "expected": "дом",
+            "found": "обувь",
+            "score": 0.7951,
+            "correct": false
+          },
+          {
+            "query": "занятие, за которое получают зарплату",
+            "expected": "работа",
+            "found": "деньги",
+            "score": 0.7378,
+            "correct": false
+          },
+          {
+            "query": "тяжёлое чувство без радости",
+            "expected": "грусть",
+            "found": "вода",
+            "score": 0.8139,
+            "correct": false
+          },
+          {
+            "query": "приятное чувство от хорошего события",
+            "expected": "радость",
+            "found": "радость",
+            "score": 0.806,
+            "correct": true
+          },
+          {
+            "query": "то, что люди едят",
+            "expected": "еда",
+            "found": "еда",
+            "score": 0.7664,
+            "correct": true
+          },
+          {
+            "query": "действие, облегчающее чужую задачу",
+            "expected": "помощь",
+            "found": "магазин",
+            "score": 0.8079,
+            "correct": false
+          },
+          {
+            "query": "неправильный результат действия",
+            "expected": "ошибка",
+            "found": "ошибка",
+            "score": 0.7888,
+            "correct": true
+          },
+          {
+            "query": "полоса для движения между местами",
+            "expected": "дорога",
+            "found": "самолёт",
+            "score": 0.7917,
+            "correct": false
+          },
+          {
+            "query": "горячее свечение при горении",
+            "expected": "огонь",
+            "found": "холод",
+            "score": 0.7838,
+            "correct": false
+          },
+          {
+            "query": "состояние с очень низкой температурой",
+            "expected": "холод",
+            "found": "холод",
+            "score": 0.7832,
+            "correct": true
+          },
+          {
+            "query": "то, чем оплачивают покупки",
+            "expected": "деньги",
+            "found": "работа",
+            "score": 0.8004,
+            "correct": false
+          },
+          {
+            "query": "электронное устройство для обработки данных",
+            "expected": "компьютер",
+            "found": "море",
+            "score": 0.7196,
+            "correct": false
+          },
+          {
+            "query": "карманное устройство для звонков",
+            "expected": "телефон",
+            "found": "быстрый",
+            "score": 0.784,
+            "correct": false
+          },
+          {
+            "query": "человек, который обучает учеников",
+            "expected": "учитель",
+            "found": "учитель",
+            "score": 0.767,
+            "correct": true
+          },
+          {
+            "query": "текст на переплетённых страницах",
+            "expected": "книга",
+            "found": "врач",
+            "score": 0.8526,
+            "correct": false
+          },
+          {
+            "query": "нарушение здоровья организма",
+            "expected": "болезнь",
+            "found": "море",
+            "score": 0.7872,
+            "correct": false
+          },
+          {
+            "query": "вещество для лечения болезни",
+            "expected": "лекарство",
+            "found": "врач",
+            "score": 0.7661,
+            "correct": false
+          },
+          {
+            "query": "огромное пространство солёной воды",
+            "expected": "море",
+            "found": "врач",
+            "score": 0.7738,
+            "correct": false
+          },
+          {
+            "query": "большая территория, покрытая деревьями",
+            "expected": "лес",
+            "found": "обувь",
+            "score": 0.8211,
+            "correct": false
+          },
+          {
+            "query": "транспорт, который летает в небе",
+            "expected": "самолёт",
+            "found": "самолёт",
+            "score": 0.8598,
+            "correct": true
+          },
+          {
+            "query": "вагоны, движущиеся по рельсам",
+            "expected": "поезд",
+            "found": "учитель",
+            "score": 0.8154,
+            "correct": false
+          },
+          {
+            "query": "искусство организованных звуков",
+            "expected": "музыка",
+            "found": "компьютер",
+            "score": 0.681,
+            "correct": false
+          },
+          {
+            "query": "отдых организма с закрытыми глазами",
+            "expected": "сон",
+            "found": "море",
+            "score": 0.7667,
+            "correct": false
+          },
+          {
+            "query": "чувство перед возможной опасностью",
+            "expected": "страх",
+            "found": "море",
+            "score": 0.7757,
+            "correct": false
+          },
+          {
+            "query": "глубокое тёплое чувство к кому-либо",
+            "expected": "любовь",
+            "found": "сон",
+            "score": 0.8871,
+            "correct": false
+          },
+          {
+            "query": "то, что измеряют часами",
+            "expected": "время",
+            "found": "время",
+            "score": 0.7999,
+            "correct": true
+          },
+          {
+            "query": "прозрачное питьё без цвета",
+            "expected": "вода",
+            "found": "ошибка",
+            "score": 0.7471,
+            "correct": false
+          },
+          {
+            "query": "звезда, освещающая Землю днём",
+            "expected": "солнце",
+            "found": "сон",
+            "score": 0.7736,
+            "correct": false
+          },
+          {
+            "query": "небесное тело, обращающееся вокруг Земли",
+            "expected": "луна",
+            "found": "собака",
+            "score": 0.8217,
+            "correct": false
+          },
+          {
+            "query": "вещи, которые надевают на тело",
+            "expected": "одежда",
+            "found": "обувь",
+            "score": 0.8234,
+            "correct": false
+          },
+          {
+            "query": "то, что надевают на ноги",
+            "expected": "обувь",
+            "found": "учитель",
+            "score": 0.8528,
+            "correct": false
+          },
+          {
+            "query": "место, где продают товары",
+            "expected": "магазин",
+            "found": "магазин",
+            "score": 0.7992,
+            "correct": true
+          },
+          {
+            "query": "место, где лечат пациентов",
+            "expected": "больница",
+            "found": "больница",
+            "score": 0.8257,
+            "correct": true
+          },
+          {
+            "query": "движущийся с высокой скоростью",
+            "expected": "быстрый",
+            "found": "врач",
+            "score": 0.8393,
+            "correct": false
+          },
+          {
+            "query": "не боящийся опасности",
+            "expected": "смелый",
+            "found": "ребёнок",
+            "score": 0.8193,
+            "correct": false
+          }
+        ]
+      },
+      "synonyms_summary": {
+        "count": 40,
+        "top1": 0.3,
+        "top3": 0.475
+      },
+      "definitions_summary": {
+        "count": 40,
+        "top1": 0.275,
+        "top3": 0.45
+      }
+    },
+    "96": {
+      "bytes_per_word": 96,
+      "compression_vs_float_embedding": 0.9375,
+      "synonyms": {
+        "count": 40,
+        "top1": 0.3,
+        "top3": 0.425,
+        "examples": [
+          {
+            "query": "пёс",
+            "expected": "собака",
+            "found": "грусть",
+            "score": 0.7263,
+            "correct": false
+          },
+          {
+            "query": "кот",
+            "expected": "кошка",
+            "found": "кошка",
+            "score": 0.7943,
+            "correct": true
+          },
+          {
+            "query": "машина",
+            "expected": "автомобиль",
+            "found": "море",
+            "score": 0.7647,
+            "correct": false
+          },
+          {
+            "query": "доктор",
+            "expected": "врач",
+            "found": "врач",
+            "score": 0.8151,
+            "correct": true
+          },
+          {
+            "query": "малыш",
+            "expected": "ребёнок",
+            "found": "кошка",
+            "score": 0.779,
+            "correct": false
+          },
+          {
+            "query": "жилище",
+            "expected": "дом",
+            "found": "магазин",
+            "score": 0.7916,
+            "correct": false
+          },
+          {
+            "query": "труд",
+            "expected": "работа",
+            "found": "книга",
+            "score": 0.775,
+            "correct": false
+          },
+          {
+            "query": "печаль",
+            "expected": "грусть",
+            "found": "грусть",
+            "score": 0.7182,
+            "correct": true
+          },
+          {
+            "query": "счастье",
+            "expected": "радость",
+            "found": "любовь",
+            "score": 0.8134,
+            "correct": false
+          },
+          {
+            "query": "пища",
+            "expected": "еда",
+            "found": "еда",
+            "score": 0.7879,
+            "correct": true
+          },
+          {
+            "query": "поддержка",
+            "expected": "помощь",
+            "found": "грусть",
+            "score": 0.8025,
+            "correct": false
+          },
+          {
+            "query": "промах",
+            "expected": "ошибка",
+            "found": "грусть",
+            "score": 0.7792,
+            "correct": false
+          },
+          {
+            "query": "путь",
+            "expected": "дорога",
+            "found": "любовь",
+            "score": 0.8044,
+            "correct": false
+          },
+          {
+            "query": "пламя",
+            "expected": "огонь",
+            "found": "любовь",
+            "score": 0.7738,
+            "correct": false
+          },
+          {
+            "query": "мороз",
+            "expected": "холод",
+            "found": "море",
+            "score": 0.7383,
+            "correct": false
+          },
+          {
+            "query": "средства",
+            "expected": "деньги",
+            "found": "деньги",
+            "score": 0.8255,
+            "correct": true
+          },
+          {
+            "query": "ПК",
+            "expected": "компьютер",
+            "found": "море",
+            "score": 0.8138,
+            "correct": false
+          },
+          {
+            "query": "смартфон",
+            "expected": "телефон",
+            "found": "телефон",
+            "score": 0.781,
+            "correct": true
+          },
+          {
+            "query": "педагог",
+            "expected": "учитель",
+            "found": "учитель",
+            "score": 0.7872,
+            "correct": true
+          },
+          {
+            "query": "издание",
+            "expected": "книга",
+            "found": "кошка",
+            "score": 0.8322,
+            "correct": false
+          },
+          {
+            "query": "недуг",
+            "expected": "болезнь",
+            "found": "грусть",
+            "score": 0.8157,
+            "correct": false
+          },
+          {
+            "query": "препарат",
+            "expected": "лекарство",
+            "found": "кошка",
+            "score": 0.8129,
+            "correct": false
+          },
+          {
+            "query": "водоём",
+            "expected": "море",
+            "found": "вода",
+            "score": 0.7891,
+            "correct": false
+          },
+          {
+            "query": "чаща",
+            "expected": "лес",
+            "found": "кошка",
+            "score": 0.7801,
+            "correct": false
+          },
+          {
+            "query": "аэроплан",
+            "expected": "самолёт",
+            "found": "вода",
+            "score": 0.7515,
+            "correct": false
+          },
+          {
+            "query": "состав",
+            "expected": "поезд",
+            "found": "магазин",
+            "score": 0.7946,
+            "correct": false
+          },
+          {
+            "query": "мелодия",
+            "expected": "музыка",
+            "found": "грусть",
+            "score": 0.8068,
+            "correct": false
+          },
+          {
+            "query": "сновидение",
+            "expected": "сон",
+            "found": "грусть",
+            "score": 0.7948,
+            "correct": false
+          },
+          {
+            "query": "боязнь",
+            "expected": "страх",
+            "found": "страх",
+            "score": 0.8069,
+            "correct": true
+          },
+          {
+            "query": "привязанность",
+            "expected": "любовь",
+            "found": "грусть",
+            "score": 0.8097,
+            "correct": false
+          },
+          {
+            "query": "период",
+            "expected": "время",
+            "found": "кошка",
+            "score": 0.8066,
+            "correct": false
+          },
+          {
+            "query": "жидкость",
+            "expected": "вода",
+            "found": "вода",
+            "score": 0.8286,
+            "correct": true
+          },
+          {
+            "query": "светило",
+            "expected": "солнце",
+            "found": "сон",
+            "score": 0.7639,
+            "correct": false
+          },
+          {
+            "query": "спутник",
+            "expected": "луна",
+            "found": "луна",
+            "score": 0.7791,
+            "correct": true
+          },
+          {
+            "query": "наряд",
+            "expected": "одежда",
+            "found": "радость",
+            "score": 0.7826,
+            "correct": false
+          },
+          {
+            "query": "ботинки",
+            "expected": "обувь",
+            "found": "обувь",
+            "score": 0.8215,
+            "correct": true
+          },
+          {
+            "query": "лавка",
+            "expected": "магазин",
+            "found": "магазин",
+            "score": 0.7593,
+            "correct": true
+          },
+          {
+            "query": "клиника",
+            "expected": "больница",
+            "found": "страх",
+            "score": 0.8187,
+            "correct": false
+          },
+          {
+            "query": "скорый",
+            "expected": "быстрый",
+            "found": "смелый",
+            "score": 0.7141,
+            "correct": false
+          },
+          {
+            "query": "храбрый",
+            "expected": "смелый",
+            "found": "врач",
+            "score": 0.7483,
+            "correct": false
+          }
+        ]
+      },
+      "definitions": {
+        "count": 40,
+        "top1": 0.275,
+        "top3": 0.525,
+        "examples": [
+          {
+            "query": "домашнее животное, которое лает",
+            "expected": "собака",
+            "found": "собака",
+            "score": 0.7618,
+            "correct": true
+          },
+          {
+            "query": "домашнее животное, которое мяукает",
+            "expected": "кошка",
+            "found": "кошка",
+            "score": 0.7187,
+            "correct": true
+          },
+          {
+            "query": "транспорт с мотором и четырьмя колёсами",
+            "expected": "автомобиль",
+            "found": "обувь",
+            "score": 0.728,
+            "correct": false
+          },
+          {
+            "query": "человек, который лечит больных",
+            "expected": "врач",
+            "found": "грусть",
+            "score": 0.783,
+            "correct": false
+          },
+          {
+            "query": "маленький человек",
+            "expected": "ребёнок",
+            "found": "кошка",
+            "score": 0.7777,
+            "correct": false
+          },
+          {
+            "query": "место, где живут люди",
+            "expected": "дом",
+            "found": "вода",
+            "score": 0.7456,
+            "correct": false
+          },
+          {
+            "query": "занятие, за которое получают зарплату",
+            "expected": "работа",
+            "found": "работа",
+            "score": 0.7758,
+            "correct": true
+          },
+          {
+            "query": "тяжёлое чувство без радости",
+            "expected": "грусть",
+            "found": "грусть",
+            "score": 0.8373,
+            "correct": true
+          },
+          {
+            "query": "приятное чувство от хорошего события",
+            "expected": "радость",
+            "found": "грусть",
+            "score": 0.7508,
+            "correct": false
+          },
+          {
+            "query": "то, что люди едят",
+            "expected": "еда",
+            "found": "еда",
+            "score": 0.824,
+            "correct": true
+          },
+          {
+            "query": "действие, облегчающее чужую задачу",
+            "expected": "помощь",
+            "found": "грусть",
+            "score": 0.7318,
+            "correct": false
+          },
+          {
+            "query": "неправильный результат действия",
+            "expected": "ошибка",
+            "found": "кошка",
+            "score": 0.7597,
+            "correct": false
+          },
+          {
+            "query": "полоса для движения между местами",
+            "expected": "дорога",
+            "found": "кошка",
+            "score": 0.7534,
+            "correct": false
+          },
+          {
+            "query": "горячее свечение при горении",
+            "expected": "огонь",
+            "found": "грусть",
+            "score": 0.7224,
+            "correct": false
+          },
+          {
+            "query": "состояние с очень низкой температурой",
+            "expected": "холод",
+            "found": "обувь",
+            "score": 0.7591,
+            "correct": false
+          },
+          {
+            "query": "то, чем оплачивают покупки",
+            "expected": "деньги",
+            "found": "обувь",
+            "score": 0.7585,
+            "correct": false
+          },
+          {
+            "query": "электронное устройство для обработки данных",
+            "expected": "компьютер",
+            "found": "телефон",
+            "score": 0.7685,
+            "correct": false
+          },
+          {
+            "query": "карманное устройство для звонков",
+            "expected": "телефон",
+            "found": "обувь",
+            "score": 0.7358,
+            "correct": false
+          },
+          {
+            "query": "человек, который обучает учеников",
+            "expected": "учитель",
+            "found": "учитель",
+            "score": 0.8322,
+            "correct": true
+          },
+          {
+            "query": "текст на переплетённых страницах",
+            "expected": "книга",
+            "found": "кошка",
+            "score": 0.7616,
+            "correct": false
+          },
+          {
+            "query": "нарушение здоровья организма",
+            "expected": "болезнь",
+            "found": "грусть",
+            "score": 0.7887,
+            "correct": false
+          },
+          {
+            "query": "вещество для лечения болезни",
+            "expected": "лекарство",
+            "found": "грусть",
+            "score": 0.7625,
+            "correct": false
+          },
+          {
+            "query": "огромное пространство солёной воды",
+            "expected": "море",
+            "found": "вода",
+            "score": 0.7989,
+            "correct": false
+          },
+          {
+            "query": "большая территория, покрытая деревьями",
+            "expected": "лес",
+            "found": "музыка",
+            "score": 0.7648,
+            "correct": false
+          },
+          {
+            "query": "транспорт, который летает в небе",
+            "expected": "самолёт",
+            "found": "собака",
+            "score": 0.7255,
+            "correct": false
+          },
+          {
+            "query": "вагоны, движущиеся по рельсам",
+            "expected": "поезд",
+            "found": "поезд",
+            "score": 0.753,
+            "correct": true
+          },
+          {
+            "query": "искусство организованных звуков",
+            "expected": "музыка",
+            "found": "музыка",
+            "score": 0.763,
+            "correct": true
+          },
+          {
+            "query": "отдых организма с закрытыми глазами",
+            "expected": "сон",
+            "found": "грусть",
+            "score": 0.7541,
+            "correct": false
+          },
+          {
+            "query": "чувство перед возможной опасностью",
+            "expected": "страх",
+            "found": "грусть",
+            "score": 0.7898,
+            "correct": false
+          },
+          {
+            "query": "глубокое тёплое чувство к кому-либо",
+            "expected": "любовь",
+            "found": "грусть",
+            "score": 0.7549,
+            "correct": false
+          },
+          {
+            "query": "то, что измеряют часами",
+            "expected": "время",
+            "found": "вода",
+            "score": 0.7613,
+            "correct": false
+          },
+          {
+            "query": "прозрачное питьё без цвета",
+            "expected": "вода",
+            "found": "вода",
+            "score": 0.7595,
+            "correct": true
+          },
+          {
+            "query": "звезда, освещающая Землю днём",
+            "expected": "солнце",
+            "found": "луна",
+            "score": 0.7618,
+            "correct": false
+          },
+          {
+            "query": "небесное тело, обращающееся вокруг Земли",
+            "expected": "луна",
+            "found": "луна",
+            "score": 0.7936,
+            "correct": true
+          },
+          {
+            "query": "вещи, которые надевают на тело",
+            "expected": "одежда",
+            "found": "кошка",
+            "score": 0.8026,
+            "correct": false
+          },
+          {
+            "query": "то, что надевают на ноги",
+            "expected": "обувь",
+            "found": "автомобиль",
+            "score": 0.7668,
+            "correct": false
+          },
+          {
+            "query": "место, где продают товары",
+            "expected": "магазин",
+            "found": "кошка",
+            "score": 0.7758,
+            "correct": false
+          },
+          {
+            "query": "место, где лечат пациентов",
+            "expected": "больница",
+            "found": "грусть",
+            "score": 0.7837,
+            "correct": false
+          },
+          {
+            "query": "движущийся с высокой скоростью",
+            "expected": "быстрый",
+            "found": "быстрый",
+            "score": 0.7631,
+            "correct": true
+          },
+          {
+            "query": "не боящийся опасности",
+            "expected": "смелый",
+            "found": "любовь",
+            "score": 0.7635,
+            "correct": false
+          }
+        ]
+      },
+      "synonyms_summary": {
+        "count": 40,
+        "top1": 0.3,
+        "top3": 0.425
+      },
+      "definitions_summary": {
+        "count": 40,
+        "top1": 0.275,
+        "top3": 0.525
+      }
+    },
+    "128": {
+      "bytes_per_word": 128,
+      "compression_vs_float_embedding": 0.9166666666666666,
+      "synonyms": {
+        "count": 40,
+        "top1": 0.225,
+        "top3": 0.475,
+        "examples": [
+          {
+            "query": "пёс",
+            "expected": "собака",
+            "found": "кошка",
+            "score": 0.7931,
+            "correct": false
+          },
+          {
+            "query": "кот",
+            "expected": "кошка",
+            "found": "кошка",
+            "score": 0.8366,
+            "correct": true
+          },
+          {
+            "query": "машина",
+            "expected": "автомобиль",
+            "found": "одежда",
+            "score": 0.8327,
+            "correct": false
+          },
+          {
+            "query": "доктор",
+            "expected": "врач",
+            "found": "автомобиль",
+            "score": 0.7891,
+            "correct": false
+          },
+          {
+            "query": "малыш",
+            "expected": "ребёнок",
+            "found": "холод",
+            "score": 0.7618,
+            "correct": false
+          },
+          {
+            "query": "жилище",
+            "expected": "дом",
+            "found": "одежда",
+            "score": 0.8433,
+            "correct": false
+          },
+          {
+            "query": "труд",
+            "expected": "работа",
+            "found": "работа",
+            "score": 0.803,
+            "correct": true
+          },
+          {
+            "query": "печаль",
+            "expected": "грусть",
+            "found": "страх",
+            "score": 0.7644,
+            "correct": false
+          },
+          {
+            "query": "счастье",
+            "expected": "радость",
+            "found": "смелый",
+            "score": 0.8091,
+            "correct": false
+          },
+          {
+            "query": "пища",
+            "expected": "еда",
+            "found": "кошка",
+            "score": 0.7572,
+            "correct": false
+          },
+          {
+            "query": "поддержка",
+            "expected": "помощь",
+            "found": "смелый",
+            "score": 0.7774,
+            "correct": false
+          },
+          {
+            "query": "промах",
+            "expected": "ошибка",
+            "found": "обувь",
+            "score": 0.7771,
+            "correct": false
+          },
+          {
+            "query": "путь",
+            "expected": "дорога",
+            "found": "смелый",
+            "score": 0.7961,
+            "correct": false
+          },
+          {
+            "query": "пламя",
+            "expected": "огонь",
+            "found": "страх",
+            "score": 0.7806,
+            "correct": false
+          },
+          {
+            "query": "мороз",
+            "expected": "холод",
+            "found": "холод",
+            "score": 0.8446,
+            "correct": true
+          },
+          {
+            "query": "средства",
+            "expected": "деньги",
+            "found": "одежда",
+            "score": 0.8161,
+            "correct": false
+          },
+          {
+            "query": "ПК",
+            "expected": "компьютер",
+            "found": "смелый",
+            "score": 0.783,
+            "correct": false
+          },
+          {
+            "query": "смартфон",
+            "expected": "телефон",
+            "found": "телефон",
+            "score": 0.823,
+            "correct": true
+          },
+          {
+            "query": "педагог",
+            "expected": "учитель",
+            "found": "одежда",
+            "score": 0.7932,
+            "correct": false
+          },
+          {
+            "query": "издание",
+            "expected": "книга",
+            "found": "одежда",
+            "score": 0.7749,
+            "correct": false
+          },
+          {
+            "query": "недуг",
+            "expected": "болезнь",
+            "found": "одежда",
+            "score": 0.7526,
+            "correct": false
+          },
+          {
+            "query": "препарат",
+            "expected": "лекарство",
+            "found": "работа",
+            "score": 0.7677,
+            "correct": false
+          },
+          {
+            "query": "водоём",
+            "expected": "море",
+            "found": "вода",
+            "score": 0.8181,
+            "correct": false
+          },
+          {
+            "query": "чаща",
+            "expected": "лес",
+            "found": "еда",
+            "score": 0.7752,
+            "correct": false
+          },
+          {
+            "query": "аэроплан",
+            "expected": "самолёт",
+            "found": "компьютер",
+            "score": 0.7348,
+            "correct": false
+          },
+          {
+            "query": "состав",
+            "expected": "поезд",
+            "found": "смелый",
+            "score": 0.809,
+            "correct": false
+          },
+          {
+            "query": "мелодия",
+            "expected": "музыка",
+            "found": "смелый",
+            "score": 0.8143,
+            "correct": false
+          },
+          {
+            "query": "сновидение",
+            "expected": "сон",
+            "found": "смелый",
+            "score": 0.803,
+            "correct": false
+          },
+          {
+            "query": "боязнь",
+            "expected": "страх",
+            "found": "страх",
+            "score": 0.8016,
+            "correct": true
+          },
+          {
+            "query": "привязанность",
+            "expected": "любовь",
+            "found": "смелый",
+            "score": 0.7631,
+            "correct": false
+          },
+          {
+            "query": "период",
+            "expected": "время",
+            "found": "одежда",
+            "score": 0.8093,
+            "correct": false
+          },
+          {
+            "query": "жидкость",
+            "expected": "вода",
+            "found": "вода",
+            "score": 0.7975,
+            "correct": true
+          },
+          {
+            "query": "светило",
+            "expected": "солнце",
+            "found": "одежда",
+            "score": 0.7771,
+            "correct": false
+          },
+          {
+            "query": "спутник",
+            "expected": "луна",
+            "found": "луна",
+            "score": 0.767,
+            "correct": true
+          },
+          {
+            "query": "наряд",
+            "expected": "одежда",
+            "found": "одежда",
+            "score": 0.7692,
+            "correct": true
+          },
+          {
+            "query": "ботинки",
+            "expected": "обувь",
+            "found": "одежда",
+            "score": 0.8204,
+            "correct": false
+          },
+          {
+            "query": "лавка",
+            "expected": "магазин",
+            "found": "одежда",
+            "score": 0.7608,
+            "correct": false
+          },
+          {
+            "query": "клиника",
+            "expected": "больница",
+            "found": "смелый",
+            "score": 0.7628,
+            "correct": false
+          },
+          {
+            "query": "скорый",
+            "expected": "быстрый",
+            "found": "смелый",
+            "score": 0.8107,
+            "correct": false
+          },
+          {
+            "query": "храбрый",
+            "expected": "смелый",
+            "found": "смелый",
+            "score": 0.7772,
+            "correct": true
+          }
+        ]
+      },
+      "definitions": {
+        "count": 40,
+        "top1": 0.325,
+        "top3": 0.7,
+        "examples": [
+          {
+            "query": "домашнее животное, которое лает",
+            "expected": "собака",
+            "found": "кошка",
+            "score": 0.7848,
+            "correct": false
+          },
+          {
+            "query": "домашнее животное, которое мяукает",
+            "expected": "кошка",
+            "found": "кошка",
+            "score": 0.7466,
+            "correct": true
+          },
+          {
+            "query": "транспорт с мотором и четырьмя колёсами",
+            "expected": "автомобиль",
+            "found": "автомобиль",
+            "score": 0.8027,
+            "correct": true
+          },
+          {
+            "query": "человек, который лечит больных",
+            "expected": "врач",
+            "found": "болезнь",
+            "score": 0.7702,
+            "correct": false
+          },
+          {
+            "query": "маленький человек",
+            "expected": "ребёнок",
+            "found": "автомобиль",
+            "score": 0.782,
+            "correct": false
+          },
+          {
+            "query": "место, где живут люди",
+            "expected": "дом",
+            "found": "смелый",
+            "score": 0.7527,
+            "correct": false
+          },
+          {
+            "query": "занятие, за которое получают зарплату",
+            "expected": "работа",
+            "found": "обувь",
+            "score": 0.8029,
+            "correct": false
+          },
+          {
+            "query": "тяжёлое чувство без радости",
+            "expected": "грусть",
+            "found": "смелый",
+            "score": 0.8099,
+            "correct": false
+          },
+          {
+            "query": "приятное чувство от хорошего события",
+            "expected": "радость",
+            "found": "смелый",
+            "score": 0.8087,
+            "correct": false
+          },
+          {
+            "query": "то, что люди едят",
+            "expected": "еда",
+            "found": "еда",
+            "score": 0.7611,
+            "correct": true
+          },
+          {
+            "query": "действие, облегчающее чужую задачу",
+            "expected": "помощь",
+            "found": "смелый",
+            "score": 0.7681,
+            "correct": false
+          },
+          {
+            "query": "неправильный результат действия",
+            "expected": "ошибка",
+            "found": "ошибка",
+            "score": 0.8154,
+            "correct": true
+          },
+          {
+            "query": "полоса для движения между местами",
+            "expected": "дорога",
+            "found": "обувь",
+            "score": 0.7854,
+            "correct": false
+          },
+          {
+            "query": "горячее свечение при горении",
+            "expected": "огонь",
+            "found": "холод",
+            "score": 0.8133,
+            "correct": false
+          },
+          {
+            "query": "состояние с очень низкой температурой",
+            "expected": "холод",
+            "found": "болезнь",
+            "score": 0.7587,
+            "correct": false
+          },
+          {
+            "query": "то, чем оплачивают покупки",
+            "expected": "деньги",
+            "found": "обувь",
+            "score": 0.7827,
+            "correct": false
+          },
+          {
+            "query": "электронное устройство для обработки данных",
+            "expected": "компьютер",
+            "found": "компьютер",
+            "score": 0.7831,
+            "correct": true
+          },
+          {
+            "query": "карманное устройство для звонков",
+            "expected": "телефон",
+            "found": "обувь",
+            "score": 0.7797,
+            "correct": false
+          },
+          {
+            "query": "человек, который обучает учеников",
+            "expected": "учитель",
+            "found": "учитель",
+            "score": 0.79,
+            "correct": true
+          },
+          {
+            "query": "текст на переплетённых страницах",
+            "expected": "книга",
+            "found": "быстрый",
+            "score": 0.7919,
+            "correct": false
+          },
+          {
+            "query": "нарушение здоровья организма",
+            "expected": "болезнь",
+            "found": "болезнь",
+            "score": 0.7986,
+            "correct": true
+          },
+          {
+            "query": "вещество для лечения болезни",
+            "expected": "лекарство",
+            "found": "лекарство",
+            "score": 0.7501,
+            "correct": true
+          },
+          {
+            "query": "огромное пространство солёной воды",
+            "expected": "море",
+            "found": "холод",
+            "score": 0.7651,
+            "correct": false
+          },
+          {
+            "query": "большая территория, покрытая деревьями",
+            "expected": "лес",
+            "found": "автомобиль",
+            "score": 0.7112,
+            "correct": false
+          },
+          {
+            "query": "транспорт, который летает в небе",
+            "expected": "самолёт",
+            "found": "поезд",
+            "score": 0.7369,
+            "correct": false
+          },
+          {
+            "query": "вагоны, движущиеся по рельсам",
+            "expected": "поезд",
+            "found": "поезд",
+            "score": 0.8102,
+            "correct": true
+          },
+          {
+            "query": "искусство организованных звуков",
+            "expected": "музыка",
+            "found": "музыка",
+            "score": 0.748,
+            "correct": true
+          },
+          {
+            "query": "отдых организма с закрытыми глазами",
+            "expected": "сон",
+            "found": "одежда",
+            "score": 0.7272,
+            "correct": false
+          },
+          {
+            "query": "чувство перед возможной опасностью",
+            "expected": "страх",
+            "found": "автомобиль",
+            "score": 0.7688,
+            "correct": false
+          },
+          {
+            "query": "глубокое тёплое чувство к кому-либо",
+            "expected": "любовь",
+            "found": "смелый",
+            "score": 0.8087,
+            "correct": false
+          },
+          {
+            "query": "то, что измеряют часами",
+            "expected": "время",
+            "found": "обувь",
+            "score": 0.7871,
+            "correct": false
+          },
+          {
+            "query": "прозрачное питьё без цвета",
+            "expected": "вода",
+            "found": "смелый",
+            "score": 0.7765,
+            "correct": false
+          },
+          {
+            "query": "звезда, освещающая Землю днём",
+            "expected": "солнце",
+            "found": "луна",
+            "score": 0.7402,
+            "correct": false
+          },
+          {
+            "query": "небесное тело, обращающееся вокруг Земли",
+            "expected": "луна",
+            "found": "луна",
+            "score": 0.7277,
+            "correct": true
+          },
+          {
+            "query": "вещи, которые надевают на тело",
+            "expected": "одежда",
+            "found": "одежда",
+            "score": 0.7906,
+            "correct": true
+          },
+          {
+            "query": "то, что надевают на ноги",
+            "expected": "обувь",
+            "found": "одежда",
+            "score": 0.7769,
+            "correct": false
+          },
+          {
+            "query": "место, где продают товары",
+            "expected": "магазин",
+            "found": "одежда",
+            "score": 0.8046,
+            "correct": false
+          },
+          {
+            "query": "место, где лечат пациентов",
+            "expected": "больница",
+            "found": "болезнь",
+            "score": 0.7409,
+            "correct": false
+          },
+          {
+            "query": "движущийся с высокой скоростью",
+            "expected": "быстрый",
+            "found": "быстрый",
+            "score": 0.8147,
+            "correct": true
+          },
+          {
+            "query": "не боящийся опасности",
+            "expected": "смелый",
+            "found": "быстрый",
+            "score": 0.7695,
+            "correct": false
+          }
+        ]
+      },
+      "synonyms_summary": {
+        "count": 40,
+        "top1": 0.225,
+        "top3": 0.475
+      },
+      "definitions_summary": {
+        "count": 40,
+        "top1": 0.325,
+        "top3": 0.7
+      }
+    },
+    "256": {
+      "bytes_per_word": 256,
+      "compression_vs_float_embedding": 0.8333333333333334,
+      "synonyms": {
+        "count": 40,
+        "top1": 0.45,
+        "top3": 0.7,
+        "examples": [
+          {
+            "query": "пёс",
+            "expected": "собака",
+            "found": "вода",
+            "score": 0.7659,
+            "correct": false
+          },
+          {
+            "query": "кот",
+            "expected": "кошка",
+            "found": "кошка",
+            "score": 0.8208,
+            "correct": true
+          },
+          {
+            "query": "машина",
+            "expected": "автомобиль",
+            "found": "вода",
+            "score": 0.8025,
+            "correct": false
+          },
+          {
+            "query": "доктор",
+            "expected": "врач",
+            "found": "врач",
+            "score": 0.7995,
+            "correct": true
+          },
+          {
+            "query": "малыш",
+            "expected": "ребёнок",
+            "found": "страх",
+            "score": 0.7936,
+            "correct": false
+          },
+          {
+            "query": "жилище",
+            "expected": "дом",
+            "found": "дом",
+            "score": 0.8041,
+            "correct": true
+          },
+          {
+            "query": "труд",
+            "expected": "работа",
+            "found": "работа",
+            "score": 0.8088,
+            "correct": true
+          },
+          {
+            "query": "печаль",
+            "expected": "грусть",
+            "found": "страх",
+            "score": 0.7956,
+            "correct": false
+          },
+          {
+            "query": "счастье",
+            "expected": "радость",
+            "found": "собака",
+            "score": 0.7992,
+            "correct": false
+          },
+          {
+            "query": "пища",
+            "expected": "еда",
+            "found": "еда",
+            "score": 0.805,
+            "correct": true
+          },
+          {
+            "query": "поддержка",
+            "expected": "помощь",
+            "found": "помощь",
+            "score": 0.7881,
+            "correct": true
+          },
+          {
+            "query": "промах",
+            "expected": "ошибка",
+            "found": "еда",
+            "score": 0.7785,
+            "correct": false
+          },
+          {
+            "query": "путь",
+            "expected": "дорога",
+            "found": "дорога",
+            "score": 0.801,
+            "correct": true
+          },
+          {
+            "query": "пламя",
+            "expected": "огонь",
+            "found": "страх",
+            "score": 0.7858,
+            "correct": false
+          },
+          {
+            "query": "мороз",
+            "expected": "холод",
+            "found": "холод",
+            "score": 0.7989,
+            "correct": true
+          },
+          {
+            "query": "средства",
+            "expected": "деньги",
+            "found": "вода",
+            "score": 0.803,
+            "correct": false
+          },
+          {
+            "query": "ПК",
+            "expected": "компьютер",
+            "found": "компьютер",
+            "score": 0.7926,
+            "correct": true
+          },
+          {
+            "query": "смартфон",
+            "expected": "телефон",
+            "found": "телефон",
+            "score": 0.8191,
+            "correct": true
+          },
+          {
+            "query": "педагог",
+            "expected": "учитель",
+            "found": "учитель",
+            "score": 0.8313,
+            "correct": true
+          },
+          {
+            "query": "издание",
+            "expected": "книга",
+            "found": "еда",
+            "score": 0.7644,
+            "correct": false
+          },
+          {
+            "query": "недуг",
+            "expected": "болезнь",
+            "found": "болезнь",
+            "score": 0.7511,
+            "correct": true
+          },
+          {
+            "query": "препарат",
+            "expected": "лекарство",
+            "found": "лекарство",
+            "score": 0.8273,
+            "correct": true
+          },
+          {
+            "query": "водоём",
+            "expected": "море",
+            "found": "вода",
+            "score": 0.7928,
+            "correct": false
+          },
+          {
+            "query": "чаща",
+            "expected": "лес",
+            "found": "вода",
+            "score": 0.7842,
+            "correct": false
+          },
+          {
+            "query": "аэроплан",
+            "expected": "самолёт",
+            "found": "любовь",
+            "score": 0.7589,
+            "correct": false
+          },
+          {
+            "query": "состав",
+            "expected": "поезд",
+            "found": "огонь",
+            "score": 0.7922,
+            "correct": false
+          },
+          {
+            "query": "мелодия",
+            "expected": "музыка",
+            "found": "вода",
+            "score": 0.7698,
+            "correct": false
+          },
+          {
+            "query": "сновидение",
+            "expected": "сон",
+            "found": "сон",
+            "score": 0.802,
+            "correct": true
+          },
+          {
+            "query": "боязнь",
+            "expected": "страх",
+            "found": "страх",
+            "score": 0.7976,
+            "correct": true
+          },
+          {
+            "query": "привязанность",
+            "expected": "любовь",
+            "found": "смелый",
+            "score": 0.774,
+            "correct": false
+          },
+          {
+            "query": "период",
+            "expected": "время",
+            "found": "лес",
+            "score": 0.7715,
+            "correct": false
+          },
+          {
+            "query": "жидкость",
+            "expected": "вода",
+            "found": "вода",
+            "score": 0.8189,
+            "correct": true
+          },
+          {
+            "query": "светило",
+            "expected": "солнце",
+            "found": "луна",
+            "score": 0.7559,
+            "correct": false
+          },
+          {
+            "query": "спутник",
+            "expected": "луна",
+            "found": "компьютер",
+            "score": 0.7438,
+            "correct": false
+          },
+          {
+            "query": "наряд",
+            "expected": "одежда",
+            "found": "деньги",
+            "score": 0.7621,
+            "correct": false
+          },
+          {
+            "query": "ботинки",
+            "expected": "обувь",
+            "found": "обувь",
+            "score": 0.8092,
+            "correct": true
+          },
+          {
+            "query": "лавка",
+            "expected": "магазин",
+            "found": "работа",
+            "score": 0.7658,
+            "correct": false
+          },
+          {
+            "query": "клиника",
+            "expected": "больница",
+            "found": "больница",
+            "score": 0.7849,
+            "correct": true
+          },
+          {
+            "query": "скорый",
+            "expected": "быстрый",
+            "found": "собака",
+            "score": 0.7712,
+            "correct": false
+          },
+          {
+            "query": "храбрый",
+            "expected": "смелый",
+            "found": "страх",
+            "score": 0.7988,
+            "correct": false
+          }
+        ]
+      },
+      "definitions": {
+        "count": 40,
+        "top1": 0.525,
+        "top3": 0.775,
+        "examples": [
+          {
+            "query": "домашнее животное, которое лает",
+            "expected": "собака",
+            "found": "собака",
+            "score": 0.786,
+            "correct": true
+          },
+          {
+            "query": "домашнее животное, которое мяукает",
+            "expected": "кошка",
+            "found": "еда",
+            "score": 0.7664,
+            "correct": false
+          },
+          {
+            "query": "транспорт с мотором и четырьмя колёсами",
+            "expected": "автомобиль",
+            "found": "поезд",
+            "score": 0.8118,
+            "correct": false
+          },
+          {
+            "query": "человек, который лечит больных",
+            "expected": "врач",
+            "found": "лекарство",
+            "score": 0.7787,
+            "correct": false
+          },
+          {
+            "query": "маленький человек",
+            "expected": "ребёнок",
+            "found": "кошка",
+            "score": 0.8188,
+            "correct": false
+          },
+          {
+            "query": "место, где живут люди",
+            "expected": "дом",
+            "found": "лес",
+            "score": 0.7797,
+            "correct": false
+          },
+          {
+            "query": "занятие, за которое получают зарплату",
+            "expected": "работа",
+            "found": "работа",
+            "score": 0.7906,
+            "correct": true
+          },
+          {
+            "query": "тяжёлое чувство без радости",
+            "expected": "грусть",
+            "found": "грусть",
+            "score": 0.8161,
+            "correct": true
+          },
+          {
+            "query": "приятное чувство от хорошего события",
+            "expected": "радость",
+            "found": "радость",
+            "score": 0.787,
+            "correct": true
+          },
+          {
+            "query": "то, что люди едят",
+            "expected": "еда",
+            "found": "еда",
+            "score": 0.8345,
+            "correct": true
+          },
+          {
+            "query": "действие, облегчающее чужую задачу",
+            "expected": "помощь",
+            "found": "смелый",
+            "score": 0.7956,
+            "correct": false
+          },
+          {
+            "query": "неправильный результат действия",
+            "expected": "ошибка",
+            "found": "ошибка",
+            "score": 0.7565,
+            "correct": true
+          },
+          {
+            "query": "полоса для движения между местами",
+            "expected": "дорога",
+            "found": "лес",
+            "score": 0.7362,
+            "correct": false
+          },
+          {
+            "query": "горячее свечение при горении",
+            "expected": "огонь",
+            "found": "холод",
+            "score": 0.7653,
+            "correct": false
+          },
+          {
+            "query": "состояние с очень низкой температурой",
+            "expected": "холод",
+            "found": "холод",
+            "score": 0.8051,
+            "correct": true
+          },
+          {
+            "query": "то, чем оплачивают покупки",
+            "expected": "деньги",
+            "found": "магазин",
+            "score": 0.7623,
+            "correct": false
+          },
+          {
+            "query": "электронное устройство для обработки данных",
+            "expected": "компьютер",
+            "found": "компьютер",
+            "score": 0.7385,
+            "correct": true
+          },
+          {
+            "query": "карманное устройство для звонков",
+            "expected": "телефон",
+            "found": "телефон",
+            "score": 0.7584,
+            "correct": true
+          },
+          {
+            "query": "человек, который обучает учеников",
+            "expected": "учитель",
+            "found": "учитель",
+            "score": 0.8214,
+            "correct": true
+          },
+          {
+            "query": "текст на переплетённых страницах",
+            "expected": "книга",
+            "found": "лес",
+            "score": 0.7577,
+            "correct": false
+          },
+          {
+            "query": "нарушение здоровья организма",
+            "expected": "болезнь",
+            "found": "болезнь",
+            "score": 0.8058,
+            "correct": true
+          },
+          {
+            "query": "вещество для лечения болезни",
+            "expected": "лекарство",
+            "found": "лекарство",
+            "score": 0.7937,
+            "correct": true
+          },
+          {
+            "query": "огромное пространство солёной воды",
+            "expected": "море",
+            "found": "солнце",
+            "score": 0.7528,
+            "correct": false
+          },
+          {
+            "query": "большая территория, покрытая деревьями",
+            "expected": "лес",
+            "found": "лес",
+            "score": 0.7947,
+            "correct": true
+          },
+          {
+            "query": "транспорт, который летает в небе",
+            "expected": "самолёт",
+            "found": "поезд",
+            "score": 0.7792,
+            "correct": false
+          },
+          {
+            "query": "вагоны, движущиеся по рельсам",
+            "expected": "поезд",
+            "found": "поезд",
+            "score": 0.7881,
+            "correct": true
+          },
+          {
+            "query": "искусство организованных звуков",
+            "expected": "музыка",
+            "found": "дом",
+            "score": 0.7301,
+            "correct": false
+          },
+          {
+            "query": "отдых организма с закрытыми глазами",
+            "expected": "сон",
+            "found": "страх",
+            "score": 0.743,
+            "correct": false
+          },
+          {
+            "query": "чувство перед возможной опасностью",
+            "expected": "страх",
+            "found": "грусть",
+            "score": 0.7897,
+            "correct": false
+          },
+          {
+            "query": "глубокое тёплое чувство к кому-либо",
+            "expected": "любовь",
+            "found": "радость",
+            "score": 0.8113,
+            "correct": false
+          },
+          {
+            "query": "то, что измеряют часами",
+            "expected": "время",
+            "found": "время",
+            "score": 0.7829,
+            "correct": true
+          },
+          {
+            "query": "прозрачное питьё без цвета",
+            "expected": "вода",
+            "found": "еда",
+            "score": 0.7557,
+            "correct": false
+          },
+          {
+            "query": "звезда, освещающая Землю днём",
+            "expected": "солнце",
+            "found": "луна",
+            "score": 0.7933,
+            "correct": false
+          },
+          {
+            "query": "небесное тело, обращающееся вокруг Земли",
+            "expected": "луна",
+            "found": "луна",
+            "score": 0.8187,
+            "correct": true
+          },
+          {
+            "query": "вещи, которые надевают на тело",
+            "expected": "одежда",
+            "found": "одежда",
+            "score": 0.7713,
+            "correct": true
+          },
+          {
+            "query": "то, что надевают на ноги",
+            "expected": "обувь",
+            "found": "вода",
+            "score": 0.7921,
+            "correct": false
+          },
+          {
+            "query": "место, где продают товары",
+            "expected": "магазин",
+            "found": "магазин",
+            "score": 0.8073,
+            "correct": true
+          },
+          {
+            "query": "место, где лечат пациентов",
+            "expected": "больница",
+            "found": "больница",
+            "score": 0.7796,
+            "correct": true
+          },
+          {
+            "query": "движущийся с высокой скоростью",
+            "expected": "быстрый",
+            "found": "быстрый",
+            "score": 0.8122,
+            "correct": true
+          },
+          {
+            "query": "не боящийся опасности",
+            "expected": "смелый",
+            "found": "смелый",
+            "score": 0.7647,
+            "correct": true
+          }
+        ]
+      },
+      "synonyms_summary": {
+        "count": 40,
+        "top1": 0.45,
+        "top3": 0.7
+      },
+      "definitions_summary": {
+        "count": 40,
+        "top1": 0.525,
+        "top3": 0.775
+      }
+    },
+    "512": {
+      "bytes_per_word": 512,
+      "compression_vs_float_embedding": 0.6666666666666667,
+      "synonyms": {
+        "count": 40,
+        "top1": 0.65,
+        "top3": 0.825,
+        "examples": [
+          {
+            "query": "пёс",
+            "expected": "собака",
+            "found": "собака",
+            "score": 0.7269,
+            "correct": true
+          },
+          {
+            "query": "кот",
+            "expected": "кошка",
+            "found": "кошка",
+            "score": 0.8017,
+            "correct": true
+          },
+          {
+            "query": "машина",
+            "expected": "автомобиль",
+            "found": "автомобиль",
+            "score": 0.7812,
+            "correct": true
+          },
+          {
+            "query": "доктор",
+            "expected": "врач",
+            "found": "врач",
+            "score": 0.7887,
+            "correct": true
+          },
+          {
+            "query": "малыш",
+            "expected": "ребёнок",
+            "found": "ребёнок",
+            "score": 0.7686,
+            "correct": true
+          },
+          {
+            "query": "жилище",
+            "expected": "дом",
+            "found": "дом",
+            "score": 0.7761,
+            "correct": true
+          },
+          {
+            "query": "труд",
+            "expected": "работа",
+            "found": "работа",
+            "score": 0.7955,
+            "correct": true
+          },
+          {
+            "query": "печаль",
+            "expected": "грусть",
+            "found": "грусть",
+            "score": 0.7681,
+            "correct": true
+          },
+          {
+            "query": "счастье",
+            "expected": "радость",
+            "found": "смелый",
+            "score": 0.7693,
+            "correct": false
+          },
+          {
+            "query": "пища",
+            "expected": "еда",
+            "found": "еда",
+            "score": 0.7602,
+            "correct": true
+          },
+          {
+            "query": "поддержка",
+            "expected": "помощь",
+            "found": "помощь",
+            "score": 0.7678,
+            "correct": true
+          },
+          {
+            "query": "промах",
+            "expected": "ошибка",
+            "found": "огонь",
+            "score": 0.7323,
+            "correct": false
+          },
+          {
+            "query": "путь",
+            "expected": "дорога",
+            "found": "дорога",
+            "score": 0.7901,
+            "correct": true
+          },
+          {
+            "query": "пламя",
+            "expected": "огонь",
+            "found": "любовь",
+            "score": 0.7355,
+            "correct": false
+          },
+          {
+            "query": "мороз",
+            "expected": "холод",
+            "found": "холод",
+            "score": 0.7696,
+            "correct": true
+          },
+          {
+            "query": "средства",
+            "expected": "деньги",
+            "found": "вода",
+            "score": 0.7938,
+            "correct": false
+          },
+          {
+            "query": "ПК",
+            "expected": "компьютер",
+            "found": "компьютер",
+            "score": 0.7822,
+            "correct": true
+          },
+          {
+            "query": "смартфон",
+            "expected": "телефон",
+            "found": "телефон",
+            "score": 0.7952,
+            "correct": true
+          },
+          {
+            "query": "педагог",
+            "expected": "учитель",
+            "found": "учитель",
+            "score": 0.7693,
+            "correct": true
+          },
+          {
+            "query": "издание",
+            "expected": "книга",
+            "found": "одежда",
+            "score": 0.7921,
+            "correct": false
+          },
+          {
+            "query": "недуг",
+            "expected": "болезнь",
+            "found": "лекарство",
+            "score": 0.747,
+            "correct": false
+          },
+          {
+            "query": "препарат",
+            "expected": "лекарство",
+            "found": "лекарство",
+            "score": 0.8303,
+            "correct": true
+          },
+          {
+            "query": "водоём",
+            "expected": "море",
+            "found": "вода",
+            "score": 0.8222,
+            "correct": false
+          },
+          {
+            "query": "чаща",
+            "expected": "лес",
+            "found": "одежда",
+            "score": 0.7155,
+            "correct": false
+          },
+          {
+            "query": "аэроплан",
+            "expected": "самолёт",
+            "found": "самолёт",
+            "score": 0.7435,
+            "correct": true
+          },
+          {
+            "query": "состав",
+            "expected": "поезд",
+            "found": "еда",
+            "score": 0.7568,
+            "correct": false
+          },
+          {
+            "query": "мелодия",
+            "expected": "музыка",
+            "found": "музыка",
+            "score": 0.7979,
+            "correct": true
+          },
+          {
+            "query": "сновидение",
+            "expected": "сон",
+            "found": "сон",
+            "score": 0.7887,
+            "correct": true
+          },
+          {
+            "query": "боязнь",
+            "expected": "страх",
+            "found": "страх",
+            "score": 0.7833,
+            "correct": true
+          },
+          {
+            "query": "привязанность",
+            "expected": "любовь",
+            "found": "одежда",
+            "score": 0.7301,
+            "correct": false
+          },
+          {
+            "query": "период",
+            "expected": "время",
+            "found": "время",
+            "score": 0.7804,
+            "correct": true
+          },
+          {
+            "query": "жидкость",
+            "expected": "вода",
+            "found": "вода",
+            "score": 0.7718,
+            "correct": true
+          },
+          {
+            "query": "светило",
+            "expected": "солнце",
+            "found": "солнце",
+            "score": 0.7228,
+            "correct": true
+          },
+          {
+            "query": "спутник",
+            "expected": "луна",
+            "found": "солнце",
+            "score": 0.7304,
+            "correct": false
+          },
+          {
+            "query": "наряд",
+            "expected": "одежда",
+            "found": "одежда",
+            "score": 0.758,
+            "correct": true
+          },
+          {
+            "query": "ботинки",
+            "expected": "обувь",
+            "found": "обувь",
+            "score": 0.7995,
+            "correct": true
+          },
+          {
+            "query": "лавка",
+            "expected": "магазин",
+            "found": "огонь",
+            "score": 0.7432,
+            "correct": false
+          },
+          {
+            "query": "клиника",
+            "expected": "больница",
+            "found": "больница",
+            "score": 0.7801,
+            "correct": true
+          },
+          {
+            "query": "скорый",
+            "expected": "быстрый",
+            "found": "смелый",
+            "score": 0.7617,
+            "correct": false
+          },
+          {
+            "query": "храбрый",
+            "expected": "смелый",
+            "found": "ошибка",
+            "score": 0.7512,
+            "correct": false
+          }
+        ]
+      },
+      "definitions": {
+        "count": 40,
+        "top1": 0.75,
+        "top3": 0.9,
+        "examples": [
+          {
+            "query": "домашнее животное, которое лает",
+            "expected": "собака",
+            "found": "собака",
+            "score": 0.7512,
+            "correct": true
+          },
+          {
+            "query": "домашнее животное, которое мяукает",
+            "expected": "кошка",
+            "found": "собака",
+            "score": 0.7299,
+            "correct": false
+          },
+          {
+            "query": "транспорт с мотором и четырьмя колёсами",
+            "expected": "автомобиль",
+            "found": "автомобиль",
+            "score": 0.758,
+            "correct": true
+          },
+          {
+            "query": "человек, который лечит больных",
+            "expected": "врач",
+            "found": "врач",
+            "score": 0.7494,
+            "correct": true
+          },
+          {
+            "query": "маленький человек",
+            "expected": "ребёнок",
+            "found": "ребёнок",
+            "score": 0.7606,
+            "correct": true
+          },
+          {
+            "query": "место, где живут люди",
+            "expected": "дом",
+            "found": "дом",
+            "score": 0.7604,
+            "correct": true
+          },
+          {
+            "query": "занятие, за которое получают зарплату",
+            "expected": "работа",
+            "found": "работа",
+            "score": 0.7372,
+            "correct": true
+          },
+          {
+            "query": "тяжёлое чувство без радости",
+            "expected": "грусть",
+            "found": "грусть",
+            "score": 0.7269,
+            "correct": true
+          },
+          {
+            "query": "приятное чувство от хорошего события",
+            "expected": "радость",
+            "found": "радость",
+            "score": 0.7666,
+            "correct": true
+          },
+          {
+            "query": "то, что люди едят",
+            "expected": "еда",
+            "found": "еда",
+            "score": 0.7932,
+            "correct": true
+          },
+          {
+            "query": "действие, облегчающее чужую задачу",
+            "expected": "помощь",
+            "found": "кошка",
+            "score": 0.7466,
+            "correct": false
+          },
+          {
+            "query": "неправильный результат действия",
+            "expected": "ошибка",
+            "found": "ошибка",
+            "score": 0.7156,
+            "correct": true
+          },
+          {
+            "query": "полоса для движения между местами",
+            "expected": "дорога",
+            "found": "автомобиль",
+            "score": 0.716,
+            "correct": false
+          },
+          {
+            "query": "горячее свечение при горении",
+            "expected": "огонь",
+            "found": "огонь",
+            "score": 0.7311,
+            "correct": true
+          },
+          {
+            "query": "состояние с очень низкой температурой",
+            "expected": "холод",
+            "found": "болезнь",
+            "score": 0.7497,
+            "correct": false
+          },
+          {
+            "query": "то, чем оплачивают покупки",
+            "expected": "деньги",
+            "found": "деньги",
+            "score": 0.7661,
+            "correct": true
+          },
+          {
+            "query": "электронное устройство для обработки данных",
+            "expected": "компьютер",
+            "found": "компьютер",
+            "score": 0.7168,
+            "correct": true
+          },
+          {
+            "query": "карманное устройство для звонков",
+            "expected": "телефон",
+            "found": "телефон",
+            "score": 0.7454,
+            "correct": true
+          },
+          {
+            "query": "человек, который обучает учеников",
+            "expected": "учитель",
+            "found": "учитель",
+            "score": 0.7795,
+            "correct": true
+          },
+          {
+            "query": "текст на переплетённых страницах",
+            "expected": "книга",
+            "found": "компьютер",
+            "score": 0.7439,
+            "correct": false
+          },
+          {
+            "query": "нарушение здоровья организма",
+            "expected": "болезнь",
+            "found": "болезнь",
+            "score": 0.7628,
+            "correct": true
+          },
+          {
+            "query": "вещество для лечения болезни",
+            "expected": "лекарство",
+            "found": "лекарство",
+            "score": 0.7665,
+            "correct": true
+          },
+          {
+            "query": "огромное пространство солёной воды",
+            "expected": "море",
+            "found": "вода",
+            "score": 0.7404,
+            "correct": false
+          },
+          {
+            "query": "большая территория, покрытая деревьями",
+            "expected": "лес",
+            "found": "лес",
+            "score": 0.769,
+            "correct": true
+          },
+          {
+            "query": "транспорт, который летает в небе",
+            "expected": "самолёт",
+            "found": "самолёт",
+            "score": 0.7585,
+            "correct": true
+          },
+          {
+            "query": "вагоны, движущиеся по рельсам",
+            "expected": "поезд",
+            "found": "поезд",
+            "score": 0.7586,
+            "correct": true
+          },
+          {
+            "query": "искусство организованных звуков",
+            "expected": "музыка",
+            "found": "музыка",
+            "score": 0.7333,
+            "correct": true
+          },
+          {
+            "query": "отдых организма с закрытыми глазами",
+            "expected": "сон",
+            "found": "сон",
+            "score": 0.7193,
+            "correct": true
+          },
+          {
+            "query": "чувство перед возможной опасностью",
+            "expected": "страх",
+            "found": "страх",
+            "score": 0.7425,
+            "correct": true
+          },
+          {
+            "query": "глубокое тёплое чувство к кому-либо",
+            "expected": "любовь",
+            "found": "любовь",
+            "score": 0.788,
+            "correct": true
+          },
+          {
+            "query": "то, что измеряют часами",
+            "expected": "время",
+            "found": "время",
+            "score": 0.7511,
+            "correct": true
+          },
+          {
+            "query": "прозрачное питьё без цвета",
+            "expected": "вода",
+            "found": "лекарство",
+            "score": 0.7123,
+            "correct": false
+          },
+          {
+            "query": "звезда, освещающая Землю днём",
+            "expected": "солнце",
+            "found": "луна",
+            "score": 0.7444,
+            "correct": false
+          },
+          {
+            "query": "небесное тело, обращающееся вокруг Земли",
+            "expected": "луна",
+            "found": "луна",
+            "score": 0.7637,
+            "correct": true
+          },
+          {
+            "query": "вещи, которые надевают на тело",
+            "expected": "одежда",
+            "found": "обувь",
+            "score": 0.7613,
+            "correct": false
+          },
+          {
+            "query": "то, что надевают на ноги",
+            "expected": "обувь",
+            "found": "обувь",
+            "score": 0.7742,
+            "correct": true
+          },
+          {
+            "query": "место, где продают товары",
+            "expected": "магазин",
+            "found": "магазин",
+            "score": 0.7796,
+            "correct": true
+          },
+          {
+            "query": "место, где лечат пациентов",
+            "expected": "больница",
+            "found": "больница",
+            "score": 0.7649,
+            "correct": true
+          },
+          {
+            "query": "движущийся с высокой скоростью",
+            "expected": "быстрый",
+            "found": "быстрый",
+            "score": 0.7878,
+            "correct": true
+          },
+          {
+            "query": "не боящийся опасности",
+            "expected": "смелый",
+            "found": "быстрый",
+            "score": 0.7453,
+            "correct": false
+          }
+        ]
+      },
+      "synonyms_summary": {
+        "count": 40,
+        "top1": 0.65,
+        "top3": 0.825
+      },
+      "definitions_summary": {
+        "count": 40,
+        "top1": 0.75,
+        "top3": 0.9
+      }
+    }
+  }
+}

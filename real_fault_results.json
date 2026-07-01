@@ -1,0 +1,218 @@
+{
+  "schema_version": 1,
+  "suite": "real-text-storage-and-faults",
+  "fault_model_note": "Faults are injected into real serialized SQLite/CHORD bytes and packet streams; this is controlled simulation, not a failing physical SSD or network interface.",
+  "dataset": {
+    "active_real_memory_records": 41,
+    "utf8_text_bytes": 8728,
+    "archive_bytes": 10726,
+    "gzip_archive_bytes": 4378,
+    "max_text_bytes": 439,
+    "fixed_record_bytes": 441,
+    "padded_payload_bytes": 18081,
+    "content_in_result": false
+  },
+  "storage": {
+    "sqlite": {
+      "bytes": 24576,
+      "lookup_qps": 39350.56612677446,
+      "integrity": "ok"
+    },
+    "hamming74": {
+      "bytes_equivalent": 18771,
+      "multiplier_vs_archive": 1.75
+    },
+    "isolated_chord": {
+      "config": {
+        "records": 41,
+        "marker_dims": 512,
+        "payload_dims": 84672,
+        "payload_bits": 3528,
+        "marker_k": 32,
+        "bit_k": 8,
+        "redundancy": 3,
+        "seed": 42,
+        "isolated": true
+      },
+      "field_bytes": 27772416,
+      "multiplier_vs_utf8_text": 3181.9908340971588,
+      "build_seconds": 0.1338596999994479,
+      "clean_record_exact_rate": 1.0,
+      "clean_bit_accuracy": 1.0,
+      "noise_0.5_drop_0.3_record_exact_mean": 1.0,
+      "noise_0.5_drop_0.3_bit_accuracy_mean": 1.0,
+      "clean_decode_qps": 489.44056454008654
+    }
+  },
+  "disk_faults": {
+    "sqlite_with_crc32": {
+      "single_bit": {
+        "trials": 40,
+        "open_rate": 1.0,
+        "integrity_ok_rate": 0.9,
+        "application_crc_ok_rate": 0.625,
+        "exact_recovery_rate": 0.575,
+        "detected_failure_rate": 0.425,
+        "silent_data_corruption_rate": 0.0
+      },
+      "128_random_bits": {
+        "trials": 40,
+        "open_rate": 1.0,
+        "integrity_ok_rate": 0.0,
+        "application_crc_ok_rate": 0.0,
+        "exact_recovery_rate": 0.0,
+        "detected_failure_rate": 1.0,
+        "silent_data_corruption_rate": 0.0
+      },
+      "16_byte_burst": {
+        "trials": 40,
+        "open_rate": 1.0,
+        "integrity_ok_rate": 0.8,
+        "application_crc_ok_rate": 0.5,
+        "exact_recovery_rate": 0.5,
+        "detected_failure_rate": 0.5,
+        "silent_data_corruption_rate": 0.0
+      },
+      "truncate_4k": {
+        "trials": 40,
+        "open_rate": 1.0,
+        "integrity_ok_rate": 0.0,
+        "application_crc_ok_rate": 0.0,
+        "exact_recovery_rate": 0.0,
+        "detected_failure_rate": 1.0,
+        "silent_data_corruption_rate": 0.0
+      },
+      "triple_copy_one_copy_damaged": {
+        "storage_multiplier": 3,
+        "majority_recovery": true
+      }
+    },
+    "hamming74_with_crc32": {
+      "raw_bytes": 10726,
+      "encoded_bytes_equivalent": 18771,
+      "storage_multiplier": 1.75,
+      "independent_bit_flip_p=1e-05": {
+        "trials": 100,
+        "exact_recovery_rate": 1.0,
+        "detected_failure_rate": 0.0,
+        "silent_data_corruption_rate": 0.0
+      },
+      "independent_bit_flip_p=0.0001": {
+        "trials": 100,
+        "exact_recovery_rate": 1.0,
+        "detected_failure_rate": 0.0,
+        "silent_data_corruption_rate": 0.0
+      },
+      "independent_bit_flip_p=0.001": {
+        "trials": 100,
+        "exact_recovery_rate": 0.57,
+        "detected_failure_rate": 0.43,
+        "silent_data_corruption_rate": 0.0
+      },
+      "contiguous_burst_bits=8": {
+        "trials": 100,
+        "exact_recovery_rate": 0.0,
+        "detected_failure_rate": 1.0
+      },
+      "contiguous_burst_bits=64": {
+        "trials": 100,
+        "exact_recovery_rate": 0.0,
+        "detected_failure_rate": 1.0
+      },
+      "contiguous_burst_bits=512": {
+        "trials": 100,
+        "exact_recovery_rate": 0.0,
+        "detected_failure_rate": 1.0
+      }
+    },
+    "isolated_chord_with_sha256": {
+      "serialized_random_bit_flips=1": {
+        "trials": 20,
+        "sha256_detected": true,
+        "mean_record_exact_rate": 1.0,
+        "mean_bit_accuracy": 1.0
+      },
+      "serialized_random_bit_flips=128": {
+        "trials": 20,
+        "sha256_detected": true,
+        "mean_record_exact_rate": 1.0,
+        "mean_bit_accuracy": 1.0
+      },
+      "serialized_random_bit_flips=8192": {
+        "trials": 20,
+        "sha256_detected": true,
+        "mean_record_exact_rate": 1.0,
+        "mean_bit_accuracy": 1.0
+      },
+      "zero_filled_tail_loss=0.01": {
+        "sha256_detected": true,
+        "record_exact_rate": 1.0,
+        "bit_accuracy": 1.0
+      },
+      "zero_filled_tail_loss=0.1": {
+        "sha256_detected": true,
+        "record_exact_rate": 0.9024390243902439,
+        "bit_accuracy": 0.9765223162435706
+      },
+      "zero_filled_tail_loss=0.3": {
+        "sha256_detected": true,
+        "record_exact_rate": 0.7073170731707317,
+        "bit_accuracy": 0.9283778552071235
+      }
+    }
+  },
+  "network_faults": {
+    "raw_and_triple_loss=0.01": {
+      "trials": 1000,
+      "packet_bytes": 512,
+      "packets": 21,
+      "packet_corruption_probability": 0.01,
+      "raw_crc_exact_rate": 0.643,
+      "triple_crc_exact_rate": 1.0,
+      "triple_storage_multiplier": 3
+    },
+    "raw_and_triple_loss=0.1": {
+      "trials": 1000,
+      "packet_bytes": 512,
+      "packets": 21,
+      "packet_corruption_probability": 0.01,
+      "raw_crc_exact_rate": 0.1,
+      "triple_crc_exact_rate": 0.975,
+      "triple_storage_multiplier": 3
+    },
+    "raw_and_triple_loss=0.3": {
+      "trials": 1000,
+      "packet_bytes": 512,
+      "packets": 21,
+      "packet_corruption_probability": 0.01,
+      "raw_crc_exact_rate": 0.0,
+      "triple_crc_exact_rate": 0.535,
+      "triple_storage_multiplier": 3
+    },
+    "chord_packet_loss=0.01": {
+      "trials": 20,
+      "packet_bytes": 4096,
+      "packets": 6781,
+      "packet_corruption_probability": 0.01,
+      "mean_record_exact_rate": 1.0,
+      "mean_bit_accuracy": 1.0
+    },
+    "chord_packet_loss=0.1": {
+      "trials": 20,
+      "packet_bytes": 4096,
+      "packets": 6781,
+      "packet_corruption_probability": 0.01,
+      "mean_record_exact_rate": 1.0,
+      "mean_bit_accuracy": 1.0
+    },
+    "chord_packet_loss=0.3": {
+      "trials": 20,
+      "packet_bytes": 4096,
+      "packets": 6781,
+      "packet_corruption_probability": 0.01,
+      "mean_record_exact_rate": 1.0,
+      "mean_bit_accuracy": 1.0
+    }
+  },
+  "elapsed_seconds": 15.549023300000044
+}

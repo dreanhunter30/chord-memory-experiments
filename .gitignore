@@ -1,0 +1,9 @@
+.venv/
+node_modules/
+.cache/
+__pycache__/
+*.pyc
+*.sqlite
+*.db
+.codex-memory/
+results/local-*
